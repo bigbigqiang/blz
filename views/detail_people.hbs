@@ -1,0 +1,132 @@
+<div id="map" style="width:49.8%;height: 450px;float:left;">
+    <div class="modal-info" style="position:absolute;width:100%;height:30px;z-index:9;top:0;left:0;background:rgba(0,0,0,.3)
+              ;display:none;text-align:center;color:#fff;font-weight:bold;line-height:30px;font-size:16px;letter-space:0.1em">该人无坐标信息</div>
+</div>
+<div class="informationBox" style="width:49.8%;height: 450px;float:right;">
+    <h4 class="header-4">
+        基本信息
+    </h4>
+    <div class="scroll">
+        <div class="infoContent infoBox">
+            <div class="infoList" style="width: 40%;float: left;margin-left: 5%">
+                {{#basicInfo}}
+                <ul class="infoAttrName infoAttrName2">
+                    <li><span>姓名：</span>{{#if name}}{{name}}{{else}}无{{/if}}</li>
+                    <li><span>性别：</span>{{#if sex}}{{sex}}{{else}}无{{/if}}</li>
+                    <li><span>民族：</span>{{#if dicminzu}}{{dicminzu}}{{else}}无{{/if}}</li>
+                    <li><span>电话：</span>{{#if phone}}{{phone}}{{else}}无{{/if}}</li>
+                    <li><span>身份证：</span>{{#if idNum}}{{idNum}}{{else}}无{{/if}}</li>
+                    <li><span>户籍地址：</span>{{#if native}}{{native}}{{else}}无{{/if}}</li>
+                    <li><span>现住址：</span>{{#if address}}{{address}}{{else}}无{{/if}}</li>
+                    <li><span>与户主关系：</span>{{#if dichuzhuguanxi}}{{dichuzhuguanxi}}{{else}}无{{/if}}</li>
+                    <li><span>文化程度：</span>{{#if dicwenhua}}{{dicwenhua}}{{else}}无{{/if}}</li>
+                    <li><span>政治面貌：</span>{{#if diczhengzhi}}{{diczhengzhi}}{{else}}无{{/if}}</li>
+                   
+                </ul>
+                {{/basicInfo}}
+            </div>
+            <div class="infoList" style="width: 40%;float: left;margin-left: 5%">
+                {{#basicInfo}}
+                <ul class="infoAttrName infoAttrName2">
+                     <li><span>婚姻状况：</span>{{#if dicmarry}}{{dicmarry}}{{else}}无{{/if}}</li>
+                    <li><span>工作单位：</span>{{#if workcompany}}{{workcompany}}{{else}}无{{/if}}</li>
+                    <li><span>籍贯：</span>{{#if origin}}{{origin}}{{else}}无{{/if}}</li>
+                    <li><span>暂住证号：</span>{{#if residence}}{{residence}}{{else}}无{{/if}}</li>
+                    <li><span>暂住证起：</span>{{#if startTime}}{{startTime}}{{else}}无{{/if}}</li>
+                    <li><span>暂住证止：</span>{{#if endTime}}{{endTime}}{{else}}无{{/if}}</li>
+                </ul>
+                {{/basicInfo}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="informationBox" style="width:49.8%;height: 450px;margin-top: 5px">
+    <h4 class="header-4">
+        房屋信息
+    </h4>
+    <div class="scroll">
+        <div class="infoContent infoBox">
+            <div class="infoList" style="width: 30%;float: left;margin-left: 10%">
+                {{#buildInfo}}
+                <img src="/image/{{#if photo}}{{photo}}{{else}}photo.jpg{{/if}}" style="width: 100%;margin-top:35%;">
+                {{/buildInfo}}
+            </div>
+            <div class="infoList" style="width: 40%;float: left;margin-left: 5%">
+                {{#buildInfo}}
+                <div id="lat" style="display: none">{{lat}}</div>
+                <div id="lng" style="display: none">{{lng}}</div>
+                <ul class="infoAttrName infoAttrName3">
+                    <li><span>地址：</span>
+                    {{#if address}}{{address}} {{else}}无{{/if}}
+                    {{#if address}}
+                        {{#if id}}
+                            {{#if lat}}
+                                {{#if lng}}
+                                <a href="/detail/building/{{id}}/{{lat}}/{{lng}}/{{address}}"></a>
+                                {{/if}}
+                            {{/if}}
+                        {{/if}}
+                    {{/if}}
+                    </li>
+                    <li><span>房屋建筑面积：</span>{{#if buildArea}}{{buildArea}}{{else}}无{{/if}}</li>
+                    <li><span>建筑类型：</span>{{#if buildType}}{{buildType}}{{else}}无{{/if}}</li>
+                    <li><span>产权人：</span>{{#if property}}{{property}}{{else}}无{{/if}}</li>
+                    <li><span>产权人电话：</span>{{#if propertyPhone}}{{propertyPhone}}{{else}}无{{/if}}</li>
+                    <li><span>地上层数：</span>{{#if upNum}}{{upNum}}{{else}}无{{/if}}</li>
+                    <li><span>地下层数：</span>{{#if downNum}}{{downNum}}{{else}}无{{/if}}</li>
+                    <li><span>所属社区：</span>{{#if community}}{{community}}{{else}}无{{/if}}</li>
+                    <li><span>所在单元：</span>{{#if unitNum}}{{unitNum}}{{else}}无{{/if}}</li>
+                    <li><span>房间号：</span>{{#if houseNO}}{{houseNO}}{{else}}无{{/if}}</li>
+                    <li><span>房间状态：</span>{{#if isRent}}{{isRent}}{{else}}无{{/if}}</li>
+                </ul>
+                {{/buildInfo}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="informationBox" style="width:49.8%;height: 450px;float:right;margin-top: 5px">
+    <h4 class="header-4">
+        企业信息
+    </h4>
+    <div class="scroll">
+        <div class="infoContent infoBox">
+            <div class="infoList" style="width: 30%;float: left;margin-left: 10%">
+                {{#companyInfo}}
+                <img src="/image/{{#if photo}}{{photo}}{{else}}photo.jpg{{/if}}" style="width: 100%;margin-top:35%;">
+                {{/companyInfo}}
+            </div>
+            <div class="infoList" style="width: 40%;float: left;margin-left: 5%">
+                {{#companyInfo}}
+                <ul class="infoAttrName">
+                    <li><span>企业名称：</span>{{#if name}}{{name}}{{else}}无{{/if}}
+                     {{#if name}}{{#if id}}<a href="/detail/company/{{id}}"></a>{{/if}}{{/if}}
+                    </li>
+                    <li><span>企业法人：</span>{{#if legal}}{{legal}}{{else}}无{{/if}}</li>
+                    <li><span>企业地址：</span>{{#if address}}{{address}}{{else}}无{{/if}}</li>
+                    <li><span>联系电话：</span>{{#if phone}}{{phone}}{{else}}无{{/if}}</li>
+                    <li><span>企业分组：</span>{{#if group}}{{group}}{{else}}无{{/if}}</li>
+                    <li><span>企业状态：</span>{{#if state}}{{state}}{{else}}无{{/if}}</li>
+                    <li><span>注册号：</span>{{#if registNum}}{{registNum}}{{else}}无{{/if}}</li>
+                    <li><span>所属社区：</span>{{#if comm}}{{comm}}{{else}}无{{/if}}</li>
+                    <li><span>行业类别：</span>{{#if industryType}}{{industryType}}{{else}}无{{/if}}</li>
+                    <li><span>单位类别：</span>{{#if unitType}}{{unitType}}{{else}}无{{/if}}</li>
+                    <li><span>人数：</span>{{#if people}}{{people}}{{else}}无{{/if}}</li>
+                </ul>
+                {{/companyInfo}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="informationBox" style="width:100%;height: 450px;margin-top: 10px">
+    <h4 class="header-4">
+        人员事迹
+    </h4>
+    <div class="scroll">
+        <div class="infoContent infoBox">
+            <h1 style="margin-top: 10%;text-align: center;color: #999;font-size: 36px">暂无数据</h1>
+        </div>
+    </div>
+</div>
+{{#section 'js'}}
+<script type="text/javascript" src="/js/detail_people.js"></script>
+{{/section}}

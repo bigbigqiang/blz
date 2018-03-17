@@ -1,0 +1,101 @@
+.left_tree{
+    border: 1px solid #31364b;
+}
+.fusion-header{
+    background: #2c2f43;
+}
+.btn-search,.addCondition{
+    color: #a3a4ac;
+    border: 1px solid #c0c1c7;
+    background: transparent;
+}
+.btn-search:hover,.addCondition:hover{
+    color: white;
+    border: 1px solid #50a3e6;
+    background: #2477bf!important;
+}
+.condition_label{
+    margin-right: 14px;
+    color: #82858a;
+}
+.input_content,.select_relationship,.select_field{
+    font-size: 12px;
+    color: #a3a4ac!important;
+    border: 1px solid #4c5056!important;
+    background: #0e131a!important;
+}
+.delete_condition{
+    color: #a3a4ac!important;
+    background: transparent!important;
+}
+.delete_condition:hover{
+    color: #2196f3!important;
+    background: transparent!important;
+}
+.condition_switch{
+    background: #2196f3;
+    color: #fff;
+}
+.ligatureTable{
+    border: 1px solid #272b3c;
+    background: #191f28;
+}
+.ligature-title{
+    background-color: #393b48;
+    color: #fff;
+}
+.t:hover {
+    background-color: #393b48;
+    color: #a2a2a6;
+}
+.ligatureTable>ul>li{
+    background-color: #191f28;
+    color: #a2a2a6;
+}
+.ligatureTable li .icon-edit{
+    color: #2196f3;
+}
+.ep,.ep-active,.ep-non-active{
+    background: url('../../../image/link_icon.png') no-repeat;
+}
+
+.jtk-overlay{
+    color: white;
+    border: 1px solid #21b0f3;
+    background-color: #19719c;
+}
+.group-container .jtk-target-hover,.group-container .jtk-source-hover{
+    background-color: #393b48;
+    color: white;
+}
+.ligatureTable ul>li span{
+    /*position: absolute;*/
+    float: left;
+    margin-left: 10px;
+    left: 25px;
+    color:#a2a2a6;
+}
+.ligatureTable .lastLigature{
+    padding: 0;
+    background-color: #2c303b;
+    color: white;
+    height: auto;
+}
+.ligatureTable .lastLigature .ep{
+    margin-top: 16px;
+    margin-right: 10px;
+    background:url('../../../image/link_icon_white.png') no-repeat!important;
+}
+
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden>.mCSB_container{
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+#select_condi_model{
+    background-color: #191f28;
+    border: 1px solid #272b3c;
+}
+#select_condi_model>input{
+    background-color: #0e131a;
+    border: 1px solid #272b3c;
+}

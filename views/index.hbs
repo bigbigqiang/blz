@@ -1,0 +1,116 @@
+{{#section 'head'}}
+<link rel="stylesheet" href="/css/map.css" >
+{{/section}}
+<div class="left">
+    <div class="search-box">
+        <div class="select-type">
+            <select id='searchType' data-placeholder="请选择" class="chzn-select" style="width:150px;" tabindex="3">
+                <option value="0">人口</option>
+                <option selected value="1">房屋</option>
+                <option value="2">企业</option>
+            </select>
+        </div>
+        <div class="search-input">
+            <input id="search-input" class="search-input" value=""/>
+            <ul class="result-list">
+                <li>选项</li>
+            </ul>
+        </div>
+        <div id="search"></div>
+    </div>
+    <div id="map" style="height: 63.5%;margin-bottom: 5px">
+        <div class="deleteShape"></div>
+        <div class="geoSOTCode"></div>
+        <div class="buildingContentNum"></div>
+    </div>
+
+    <div class="informationBox defaultShow" style="float:right;width: 49.7%;height: 36%;">
+        <h4 class="header-4">
+            企业统计
+            <a href="/statistic/company" class="chartBtn">统计详情</a>
+        </h4>
+        <div class="informationContent">
+            <div class="chart" id="chart2"></div>
+        </div>
+    </div>
+
+    <div class="informationBox defaultShow" style="width: 49.7%;height: 36%;margin-left: 0;">
+        <h4 class="header-4">
+            房屋统计
+            <a href="/statistic/building" class="chartBtn">统计详情</a>
+        </h4>
+        <div class="informationContent">
+            <div class="chart" id="chart1"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="right">
+
+    <div class="informationBox defaultShow" style="width:100%;height: 55%;margin-bottom: 5px">
+        <h4 class="header-4">
+            人口统计
+            <a href="/statistic/people" class="chartBtn">统计详情</a>
+        </h4>
+        <div class="informationContent" style="padding-top:20px;">
+            <div class="statisticBox">
+                <div class="totalPopulation" style="float:left;width:40%">
+                    <div id="chart_pie"></div>
+                    <div class="totalNum">
+                        <div class="total">
+                            <span>总人口</span>
+                            <h3 class="totalPopulationSum">0</h3>
+                        </div>
+                        <div class="foreign">
+                            <span>外来人口</span>
+                            <h3 class="foreignPopulationSum">0</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="detailPopulation" style="float:left;width:60%;">
+                    <div id="chart_top"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="informationBox defaultShow" style="width:100%;height: 44.5%;">
+        <h4 class="header-4">
+            事件统计
+            <a href="/statistic/event" class="chartBtn">统计详情</a>
+        </h4>
+        <div class="informationContent">
+            <div class="eventType">
+                <div class="typeTitle">事件六大类</div>
+                <div class="typeTitle">企业安全风险</div>
+            </div>
+            <div class="eventBox">
+                <div class="chart" id="chart3"></div>
+            </div>
+            <div class="eventBox pieBox">
+                <div>
+                    <div class="pieChart" id="pie1"></div>
+                    <span class="pieText" style="background: #ff5c5c">0</span>
+                </div>
+                <div>
+                    <div class="pieChart" id="pie2"></div>
+                    <span class="pieText" style="background: #ff7733">0</span>
+                </div>
+                <div>
+                    <div class="pieChart" id="pie3"></div>
+                    <span class="pieText" style="background: #fdaa29">0</span>
+                </div>
+                <div>
+                    <div class="pieChart" id="pie4"></div>
+                    <span class="pieText" style="background: #32a3fa">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{{#section 'js'}}
+<script src="/js/map.js"></script>
+{{/section}}

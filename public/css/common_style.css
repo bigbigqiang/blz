@@ -1,0 +1,193 @@
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-border {
+    border: none;
+}
+
+.no-border-radius, .form-control, .btn, .input-group-addon {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.btn-primary {
+    width: 74px;
+    background-color: #6396fc;
+}
+
+.btn-primary:hover {
+    width: 74px;
+    background-color: #4f82e8;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.form-group, .query_value {
+    margin-bottom: 20px;
+}
+
+.form-group label, .query_value p {
+    color: white;
+    font-size: 12px;
+    line-height: 30px;
+    margin-bottom: 0;
+    padding-left: 2px;
+    font-weight:normal;
+}
+
+.form-control, .speed {
+    width: 100%;
+    height: 28px;
+    padding:2px 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: url("/image/select-arrow.png") no-repeat scroll 95% center #20405b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: white;
+    font-size: 12px;
+    border: 1px solid white;
+}
+
+.query_value .input-bg {
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px;
+    background: #4f657c;
+    color: white;
+    font-size: 12px;
+    border: 0;
+    border-radius:0;
+}
+
+.sidenav-btn {
+    width: 44px;
+    height: 45px;
+}
+
+.back-head-bgcolor {
+    background-color: #212121;
+}
+
+/*侧边栏title颜色*/
+.bgcolor-title {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/*侧边栏每个场景标题颜色*/
+.bgcolor-hd {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/*每个场景板块颜色*/
+.bgcolor-con {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.border-bottom {
+    border-bottom: 1px solid #42819d;
+}
+
+/*分页*/
+.link-pagination {
+    text-align: center;
+    margin: 30px auto 50px auto;
+}
+
+.pagination > li > a, .pagination > li > span {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin-right: 5px;
+    font-size: 12px;
+    line-height: 25px;
+    color: white;
+    background-color: #313436;
+    border: none;
+}
+
+.pagination > li > a, .pagination > li > span, .pagination > li:first-child > a,
+.pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+/*滚动条样式重写*/
+.mCSB_inside > .mCSB_container {
+    margin-right: 9px;
+}
+
+.leaflet-right .leaflet-control {
+    margin-right: 0;
+}
+
+.leaflet-top .leaflet-control {
+    margin-top: 0;
+}
+
+.leaflet-top .leaflet-control-measure {
+    margin-top: 0px;
+}
+.leaflet-top .leaflet-control-layers{
+    margin-top: 53px;
+}
+/*draw*/
+#btn_group {
+    height: 40px;
+    position: absolute;
+    left: 345px;
+    top: 65px;
+    display: block;
+}
+
+#btn_group .btns {
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+#btn_group .addBtn {
+    background-image: url("/image/btns.png");
+}
+
+#btn_group .addBtn:hover {
+    background-image: url("/image/btns2.png");
+}
+
+#btn_group .editBtn {
+    background: url("/image/btns.png") no-repeat -99px 0;
+}
+
+#btn_group .editBtn:hover {
+    background: url("/image/btns2.png") no-repeat -99px 0;
+}
+
+#btn_group .delBtn {
+    background: url("/image/btns.png") no-repeat -50px 0;
+}
+
+#btn_group .delBtn:hover {
+    background: url("/image/btns2.png") no-repeat -50px 0;
+}

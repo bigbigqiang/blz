@@ -1,0 +1,36 @@
+[
+  {"id":1,"text":"案件登记"},
+  {"id":2,"text":"违法犯罪人员登记"},
+  {"id":3,"text":"失踪人员登记"},
+  {"id":4,"text":"失踪人员亲属登记"},
+  {"id":5,"text":"特殊人群样本登记"},
+  {"id":6,"text":"灾难事件登记"},
+  {"id":7,"text":"基础库登记"},
+  {"id":8,
+    "text":"案件登记",
+    "children":[
+      {"id":9,"text":"案件查询","icon" : "jstree-file"},
+      {"id":10,"text":"物证查询","icon" : "jstree-file"},
+      {"id":11,"text":"案件相关人员查询","icon" : "jstree-file"},
+      {"id":12,"text":"未知名尸体查询","icon" : "jstree-file"},
+      {"id":13,"text":"嫌疑人亲属查询","icon" : "jstree-file"},
+      {"id":14,"text":"受害人亲属查询","icon" : "jstree-file"},
+      {"id":15,"text":"受害人亲属关系查询","icon" : "jstree-file"},
+      {"id":16,"text":"嫌疑亲属关系查询","icon" : "jstree-file"}
+    ]},
+  {"id":17,"text":"其他查询",
+    "children":[
+      {"id":18,"text":"违法犯罪人员查询","icon" : "jstree-file"},
+      {"id":19,"text":"失踪人员查询","icon" : "jstree-file"},
+      {"id":20,"text":"失踪人员亲属查询","icon" : "jstree-file"},
+      {"id":21,"text":"失踪亲属关系查询","icon" : "jstree-file"},
+      {"id":22,"text":"特殊人群样本查询","icon" : "jstree-file"},
+      {"id":23,"text":"灾难事件查询","icon" : "jstree-file"},
+      {"id":24,"text":"灾难人员查询","icon" : "jstree-file"},
+      {"id":25,"text":"灾难人员亲属查询","icon" : "jstree-file"},
+      {"id":26,"text":"灾难亲属关系查询","icon" : "jstree-file"},
+      {"id":27,"text":"基础库查询","icon" : "jstree-file"}
+    ]},
+  {"id":28,"text":"通用查询"}
+]
+

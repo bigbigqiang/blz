@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    {{!项目名称: iWhereLink - build with Metronic 1.3 }}
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>iWhereLink | {{title}}</title>
+    {{!BEGIN GLOBAL MANDATORY STYLES }}
+    {{>cfg_head}}
+    {{{block "stylesheets"}}}
+</head>
+<body class="page-header-fixed">
+<!-- BEGIN HEADER -->
+<div class="header navbar navbar-inverse navbar-fixed-top">
+    <!-- BEGIN TOP NAVIGATION BAR -->
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <!-- BEGIN LOGO -->
+            <a class="brand logo" href="/">
+                <!-- <img src="media/image/ilogo.png" alt="logo" /> -->
+                多源数据网格整合中间件
+            </a>
+            <!-- END LOGO -->
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a href="javascript:;" class="btn-navbar collapsed"
+               data-toggle="collapse" data-target=".nav-collapse"> <img
+                    src="image/menu-toggler.png" alt=""/> </a>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+                <ul class="nav navbar-nav pull-right">
+                    <li>{{roleName}}</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            {{userName}}
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/loginOut" id="login_out">退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <!-- END TOP NAVIGATION BAR -->
+</div>
+<!-- END HEADER -->
+<!-- BEGIN CONTAINER -->
+<div class="page-container row-fluid">
+    {{>side_menu}}
+    <!-- BEGIN PAGE -->
+    <div class="page-content">
+        <!-- BEGIN PAGE CONTAINER-->
+        <div class="container-fluid">
+            <!-- BEGIN PAGE HEADER-->
+            <div class="row-fluid">
+                <div class="span12">
+                    <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                    <h3 class="page-title">{{title}}</h3>
+                    <!-- END PAGE TITLE & BREADCRUMB-->
+                </div>
+            </div>
+            <!-- END PAGE HEADER-->
+            <!-- BEGIN PAGE CONTENT-->
+            <div class="row-fluid">
+                <div class="span12">
+                    {{{body}}}
+                    <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

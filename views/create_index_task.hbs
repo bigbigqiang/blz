@@ -1,0 +1,196 @@
+{{#section 'head'}}
+    <link rel="stylesheet" href="/css/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="/css/create_index_task.css">
+    {{!--<link rel="stylesheet" href="/css/link_theme/dark/table.css">--}}
+
+    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+
+{{/section}}
+<div class="row-fluid " id="viewStepOne">
+    <div class="row-fluid">
+        <div class="saveViewForm form-horizontal span10 offset2">
+            <p class="input-text control-group">
+                <label class="control-label span2">任务名称：</label>
+                <input type="text" id="taskName" name="taskName" class="span8">
+                <em class="requiredStar">*</em><span>不能为空</span>
+            </p>
+
+            <div class="input-text control-group">
+                <label class="control-label span2">原表建立索引：</label>
+
+                <div class="bootstrap-switch" id="switch">
+                    <input type="checkbox" id="indexType" checked/>
+                </div>
+                <em class="requiredStar">*</em><span>不能为空</span>
+            </div>
+            <p class="input-text control-group sourceTypeDom">
+                <label class="control-label span2">数据源类型：</label>
+                <select name="sourceType" id="sourceType" class="span8">
+                    <option value="db">数据库</option>
+                    <option value="ws">服务</option>
+                    <option value="view">视图</option>
+                    <option value="dic">字典</option>
+                </select>
+                <em class="requiredStar">*</em><span>不能为空</span>
+            </p>
+
+            <div id="dbSource">
+                <p class="input-text control-group">
+                    <label class="control-label span2">数据库类型：</label>
+                    <select name="dbType" id="dbType" class="span8"></select>
+                    <em class="requiredStar">*</em><span>不能为空</span>
+                </p>
+
+                <p class="input-text control-group">
+                    <label class="control-label span2">数据库：</label>
+                    <select name="dbUrl" id="dbUrl" class="span8"></select>
+                    <em class="requiredStar">*</em><span>不能为空</span>
+                </p>
+
+                <p class="input-text control-group userNameDom">
+                    <label class="control-label span2">用户名：</label>
+                    <select name="userName" id="userName" class="span8"></select>
+                    <em class="requiredStar">*</em><span>不能为空</span>
+                </p>
+
+                <p class="input-text control-group">
+                    <label class="control-label span2">选择表名：</label>
+                    <select name="tableName" id="tableName" class="span8">
+                    </select>
+                    <em class="requiredStar">*</em><span>不能为空</span>
+                </p>
+
+                <p class="input-text control-group columnNameDom">
+                    <label class="control-label span2">新建列名：</label>
+                    <input type="text" id="columnName" name="columnName" class="span8">
+                </p>
+
+                <p class="input-text control-group">
+                    <label class="control-label span2">编码类型：</label>
+                    <select name="codeType" id="codeType" class="span8">
+                        <option value="1">点编码</option>
+                        <option value="2">矩形编码</option>
+                    </select>
+                    <em class="requiredStar">*</em><span>不能为空</span>
+                </p>
+
+                <p class="input-text control-group">
+                    <label class="control-label span2">坐标类型：</label>
+                    <select name="coordinateType" id="coordinateType" class="span8">
+                        <option value="BD">百度</option>
+                        <option value="GCJ">高德</option>
+                        <option value="WGS">WGS84</option>
+                    </select>
+                    <em class="requiredStar">*</em><span>不能为空</span>
+                </p>
+
+                <p class="input-text control-group codeZoomDom">
+                    <label class="control-label span2">层级：</label>
+                    <select name="codeZoom" id="codeZoom" class="span8">
+                        <option value="1">1（四分之一地球）</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6（1024km*1024km）</option>
+                        <option value="7">7（512km*512km）</option>
+                        <option value="8">8（256km*256km）</option>
+                        <option value="9">9（128km*128km）</option>
+                        <option value="10">10（64km*64km）</option>
+                        <option value="11">11（32km*32km）</option>
+                        <option value="12">12（16km*16km）</option>
+                        <option value="13">13（8km*8km）</option>
+                        <option value="14">14（4km*4km）</option>
+                        <option value="15">15（2km*2km）</option>
+                        <option value="16">16（1km*1km）</option>
+                        <option value="17">17（512m*512m）</option>
+                        <option value="18">18（256m*256m）</option>
+                        <option value="19">19（128m*128m）</option>
+                        <option value="20">20（64m*64m）</option>
+                        <option value="21">21（32m*32m）</option>
+                        <option value="22">22（16m*16m）</option>
+                        <option value="23">23（8m*8m）</option>
+                        <option value="24">24（4m*4m）</option>
+                        <option value="25">25（2m*2m）</option>
+                        <option value="26">26（1m*1m）</option>
+                        <option value="27">27（0.5m*0.5m）</option>
+                        <option value="28">28（25cm*25cm）</option>
+                        <option value="29">29（12.5cm*12.5cm）</option>
+                        <option value="30">30（6.2cm*6.2cm）</option>
+                        <option value="31">31（3.1cm*3.1cm）</option>
+                        <option value="32">32（1.5cm*1.5cm）</option>
+                    </select>
+                    <em class="requiredStar">*</em><span>不能为空</span>
+                </p>
+            </div>
+            {{!-- <div id="wsSource" style="display: none;">
+                 <p class="input-text control-group">
+                     <label class="control-label span2">服务类型：</label>
+                     <select name="wsType" id="wsType" class="span8"></select>
+                     <em class="requiredStar">*</em><span>不能为空</span>
+                 </p>
+                 <p class="input-text control-group">
+                     <label class="control-label span2">服务地址：</label>
+                     <select name="wsUrl" id="wsUrl" class="span8"></select>
+                     <em class="requiredStar">*</em><span>不能为空</span>
+                 </p>
+                 <p class="input-text control-group">
+                     <label class="control-label span2">服务名称：</label>
+                     <select name="wsName" id="wsName" class="span8"></select>
+                     <em class="requiredStar">*</em><span>不能为空</span>
+                 </p>
+             </div>--}}
+            <div class="input-text control-group">
+                <label class="control-label span2">待编码的列：</label>
+                <!--<select name="codeColumn" id="codeColumn" class="span8">-->
+                <!--</select>-->
+                <div class="span8 codeColumn" style="margin-left: 0;">
+                    <div class="span5 leftBox ">
+                        <p>备选列</p>
+
+                        <select name="from[]" id="multiselect" class="form-control" size="8" multiple="multiple"
+                                style="width:100% ; overflow: auto">
+                        </select>
+                    </div>
+                    <div class="span2" style="margin-top: 35px;">
+                        <button type="button" id="multiselect_rightSelected" class="btn btn-block moveBtn">
+                            <i class="icon-chevron-right"></i>
+                        </button>
+                        <button type="button" id="multiselect_leftSelected" class="btn btn-block moveBtn">
+                            <i class="icon-chevron-left"></i>
+                        </button>
+                    </div>
+                    <div class="span5 rightBox">
+                        <p>已选列（右键设置属性）</p>
+                        <select name="to[]" id="multiselect_to" class="form-control" size="8" multiple="multiple"
+                                style="width: 100%;overflow: auto">
+                        </select>
+                    </div>
+                </div>
+                <em class="requiredStar" style="left:3px;">*</em><span>不能为空</span>
+            </div>
+        </div>
+    </div>
+    <ul id="contextmenu"></ul>
+    <div class="row-fluid" id="dataStatistic">
+        <div class="span8 offset4">
+            <p class="span5"> 总数据量：<span id="totalNum"></span></p>
+            <p class="span5"> 预计编码时长：<span id="codeTime"></span></p>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="stepBtn span5 offset7">
+            <a class="btn   btn-reset resetForm">重置</a>
+            <a class="btn   saveForm">保存</a>
+            <a class="btn   checkStart">预检查并启动</a>
+        </div>
+    </div>
+</div>
+{{#section 'js'}}
+    <script src="js/bootstrap-switch.min.js"></script>
+    <script src="js/sockjs.js"></script>
+    <script src="js/multiselect.min.js"></script>
+    <script src="js/create_index_task.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+{{/section}}

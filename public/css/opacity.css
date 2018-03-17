@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+.leaflet-control-opacity{background:#383c3d;position:relative;}
+.leaflet-control-opacity-slide{float:right;color:#fff; height:50px; width:160px; position:absolute; right:69px; top:0; display:none; background:#383c3d;border-bottom:#666666 solid 1px;border-right:#666666 solid 1px; z-index:999999;} 
+.leaflet-control-opacity-imgs{float:right;padding:15px 25px 15px 24px; height:20px; width:20px;border-bottom:#666666 solid 1px; }
+
+#master{width:139px; margin:22px 10px;float:left;border-bottom:#666666 solid 1px; border-radius:20px; background:#fff; border:none; height:0.5em;}
+
+.leaflet-control-opacity-word{ float:right; display:none;}
+.leaflet-control-opacity-word p{float:left;padding:15px 25px ;margin:0;font-size:14px;color:#FFF;background:#6595fb url(../image/slide-word-arrow.png) no-repeat right center; }
+.leaflet-control-opacity-word img{ float:left; padding-top:17px;}
+.leaflet-control-opacity:hover .leaflet-control-opacity-word{display:block;}
+
+#master .ui-corner-all { border-radius:20px; background:#e19496;}
+
+#master .ui-state-default{background-color:transparent;background-image:url('../image/slidercircle.png')!important;border:none;}
+
+.leaflet-control-opacity:hover .leaflet-control-opacity-word{display:block;}
+#master .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { height:15px; width:15px; border:none;}

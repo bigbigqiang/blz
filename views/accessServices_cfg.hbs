@@ -1,0 +1,243 @@
+{{#section 'head'}}
+    {{!--<link rel="stylesheet" href="/css/link_theme/dark/table.css">--}}
+
+
+{{/section}}
+{{#section 'pagetitle'}}
+    <div class="page-title titleList row">
+        <div class="span6 listNum"><p class="totalNum">服务量：<span>{{totalNum}}</span></p></div>
+        <div class="span6 statusNum">
+            {{#if statistics}}
+                {{#each statistics}}
+                    <p class="statistics ">{{name}}：<span>{{count}}</span></p>
+                {{/each}}
+            {{else}}
+                <p class="statistics ">暂无统计信息：<span></span></p>
+            {{/if}}
+        </div>
+    </div>
+{{/section}}
+<!--<select class="database-type selectBox" id="selectWSType">-->
+    <!--<option value="0">全部</option>-->
+    <!--{{#if WSType}}-->
+        <!--{{#each WSType}}-->
+            <!--<option value={{id}}>{{name}}</option>-->
+        <!--{{/each}}-->
+    <!--{{else}}-->
+        <!--<option>暂无数据</option>-->
+    <!--{{/if}}-->
+<!--</select>-->
+<table class="table table-striped table-hover table-bordered serviceType">
+    <thead>
+    <tr class="table-title">
+        <th class="span2" cond="delete_all"><input type="checkbox" id="select_all" /></th>
+        <th class="span2" cond="status">状态
+        </th>
+        <th class="span2" cond="type">服务类型
+            <span style="margin-left:10px"><i class="icon-chevron-up"></i></span>
+        </th>
+        <th class="span2" cond="name">服务名
+            <span style="margin-left:10px"></span>
+        </th>
+        <th class="span4" cond="url">服务地址
+            <span style="margin-left:10px"><i class="icon-chevron-up"></i></span>
+        </th>
+        <th class="span3" cond="request_type">请求类型
+            <span style="margin-left:10px"><i class="icon-chevron-up"></i></span>
+        </th>
+        <th class="span3" cond="request_data">请求内容
+            <span style="margin-left:10px"><i class="icon-chevron-up"></i></span>
+        </th>
+        <th class="span1">编辑</th>
+        <th class="span1">删除</th>
+        <th class="span2">测试连接</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each serviceTypeList}}
+        <tr>
+            <td class='text-center'><input type="checkbox" value={{id}}></td>
+            <td class='text-center linkStatus' data-message="{{message}}">{{#linkStatus status}}{{/linkStatus}}</td>
+            <td class='text-center' value={{type}}>{{typeName}}</td>
+            <td class='text-center' value={{id}}>{{name}}</td>
+            <td class='text-center'>{{url}}</td>
+            <td class='text-center'>{{requestType}}</td>
+            <td class='text-center'>{{requestData}}</td>
+            <td class='text-center'>
+                <a class='edit' href='javascript:;'>编辑</a>
+            </td>
+            <td class='text-center'>
+                <a class='delete' href='javascript:;'>删除</a>
+            </td>
+            <td class='text-center'>
+                <a class='connectionCheck' href='javascript:;'>测试连接</a> {{!
+                <br><span>{{changeDate}}{{!</span>}}
+            </td>
+            <td class='text-center wsId' style='display: none'>{{id}}</td>
+        </tr>
+    {{else}}
+        <tr>
+            <td colspan='10' class='text-center'>暂无数据</td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
+<div class="clearfix">
+    <div class="btn-group" id="add-select" >
+        <div id="sample_editable_1_new" class="btn add-btn ">添加
+        </div>
+        <button class="btn" type="button" id="batch_del">批量删除</button>
+
+        <!--<span id="icon-down"><img src="iconfont/images/downbtn.png"></span>-->
+    </div>
+    <!--<span id="icon-down"><i class="icon-chevron-down" ></i></span>-->
+</div>
+<div class="pagination pagination-mini" style="float: right; margin-right: 30px; margin-bottom: 20px;">
+    <div class="M-box dbMbox" totalPage={{totalPage}} page={{page}} totalNum={{totalNum}}></div>
+</div>
+<!--START TABLR BACKGROUNDGREY-->
+<div class="tablebg-grey"></div>
+<!--END TABLR BACKGROUNDGREY-->
+<!--START TABLR ADD MEW-->
+<div class="add-new" style="display: none;">
+    <h4>
+        <i class="icon-edit"></i>添加服务<img src="image/portlet-remove-icon-white.png" />
+    </h4>
+
+    <form>
+        <p class="input-text">
+            <label>
+                选择服务类型
+            </label>
+            <select class="database-type2" id="serviceSource" name="serviceSource" style="width:375px" >
+                <option value="0" url="">选择服务类型</option>
+                {{#each WSType}}
+                    <option value={{id}}>{{name}}</option>
+                {{/each}}
+            </select>
+            <em class="requiredStar">*</em>
+            <span>不能为空</span>
+        </p>
+        <p class="input-text">
+            <label>服务名称</label>
+            <input type="text" id="serviceName" name="serviceName">
+            <em class="requiredStar">*</em>
+            <span>不能为空</span>
+        </p>
+
+        <p class="input-text">
+            <label>服务地址</label>
+            <input type="text" id="serviceURL" name="serviceURL">
+            <em class="requiredStar">*</em>
+            <span>不能为空</span>
+
+        </p>
+        <p class="input-text">
+            <label>请求类型</label>
+            <input type="text" id="requestType" name="requestType">
+            <em class="requiredStar">*</em>
+            <span>不能为空</span>
+        </p>
+        <p class="input-text">
+            <label>请求数据类型</label>
+            <select name="updaterequestType" id="updaterequestType" style="width:375px">
+                <option value="get">GET</option>
+                <option value="post">POST</option>
+            </select>
+            <em class="requiredStar">*</em>
+            <span class="msg">不能为空</span>
+        </p>
+        <p class="input-text">
+            <label>通行钥匙</label><input type="text" id="accesskey" name="accesskey"><span>不能为空</span>
+        </p>
+        <p class="error-tipMsg"></p>
+        <p class="btn-form">
+            <span><input type="button" value="保 存" id="save"> </span><span><input type="reset" class="page-link addCancel" value="取消"> </span>
+        </p>
+        <input type="hidden" name="flag" value="default"> <input type="hidden" name="target" value="self">
+    </form>
+</div>
+<!--END TABLR ADD MEW-->
+
+<!--START TABLR CHANGE-->
+<div class="change-message" style="display: none;">
+    <h4>
+        <i class="icon-edit"></i>服务编辑<img src="image/portlet-remove-icon-white.png">
+    </h4>
+
+    <form id="fillwsInfoForm">
+        <p class="input-text">
+            <label>
+                选择服务类型
+            </label>
+            <select class="database-type2" id="updateseviceType" name="updateseviceType" style="width:375px"  disabled>
+                <option value="0" url="" >选择服务类型</option>
+                {{#each WSType}}
+                    <option value={{id}} >{{name}}</option>
+                {{/each}}
+            </select>
+            <em class="requiredStar">*</em>
+            <span class="msg">不能为空</span>
+        </p>
+        <p class="input-text">
+            <label>服务名称</label><em class="requiredStar">*</em><input type="text" id="updateserviceName" name="updateserviceName"><span class="msg">不能为空</span>
+        </p>
+
+        <p class="input-text">
+            <label>服务地址</label><em class="requiredStar">*</em><input type="text" id="updateserviceURL" name="updateserviceURL"><span class="msg">不能为空</span>
+        </p>
+        <p class="input-text">
+            <label>请求数据类型</label>
+            <select name="updaterequestType" id="updaterequestType" style="width:375px">
+                <option value="get">GET</option>
+                <option value="post">POST</option>
+            </select>
+            <em class="requiredStar">*</em>
+            <span class="msg">不能为空</span>
+        </p>
+        <p class="input-text">
+            <label>请求内容</label><input type="text" id="updaterequestData" name="updaterequestData"><span class="msg">不能为空</span>
+        </p>
+        <p class="input-text">
+            <label>通行钥匙</label><input type="text" id="updateaccesskey" name="accesskey"><span class="msg">不能为空</span>
+        </p>
+        <input type="hidden" name="updateserviceid" id="updateserviceid" />
+        <input type="hidden" name="updateViewIds" id="updateViewIds" />
+        <input type="hidden" name="updatedicIds" id="updatedicIds" />
+        <p class="error-tipMsg"></p>
+        <p class="btn-form">
+            <input type="button" value="保 存" id="update_save">
+            <input type="reset" value="取 消" class="cancel">
+        </p>
+
+    </form>
+</div>
+<div class="changeLabel" style="display: none;">
+    <h4>
+        <i class="icon-edit"></i>选择链接关系<img src="image/portlet-remove-icon-white.png" />
+    </h4>
+
+    <form>
+        <p class="input-text">
+            <label>连接类型</label>
+            <select id="labelType" name="labelType">
+                <option value="CROSSJOIN">CROSSJOIN</option>
+                <option value="FULLJOIN">FULLJOIN</option>
+                <option value="RIGHTJOIN">RIGHTJOIN</option>
+                <option value="LEFTJOIN">LEFTJOIN</option>
+                <option value="INNERJOIN">INNERJOIN</option>
+            </select>
+        </p>
+        <p class="btn-form">
+            <span><input type="button" value="确 定" id="confirmLabel"> </span>
+        </p>
+        <input type="hidden" name="flag" value="default"> <input type="hidden" name="target" value="self">
+    </form>
+</div>
+
+
+<!-- END PAGE -->
+{{#section 'js'}}
+    <script src="js/jquery.pagination.js"></script>
+    <script src="js/sockjs.js"></script>
+    <script src="js/accessServices_cfg.js"></script> {{/section}}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>八里庄云动中心数据库编码统一系统</title>
+
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="/css/select2_metro.css" />
+    <link rel="stylesheet" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/leaflet.css"/>
+    <link rel="stylesheet" href="/css/chosen.css"/>
+    <link rel="stylesheet" href="/css/slide.css"/>
+    <link rel="stylesheet" href="/css/leaflet.draw.css" />
+    <link rel="stylesheet" href="/css/gridTool.css"/>
+    <link rel="stylesheet" href="/css/L.Control.geoSOT.css"/>
+    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="/css/SimpleCanleder.css"/>
+    <link rel="stylesheet" href="/css/MarkerCluster.Default.css"/>
+    <link rel="stylesheet" href="/css/L.Control.aeroPointInfo.css" type="text/css"/>
+    <link rel="stylesheet" href="/js/layer/skin/layer.css" type="text/css"/>
+    <link rel="stylesheet" href="/common/common.css"/>
+    <link rel="shortcut icon" href="/image/favicon.ico" />
+    
+    {{{_sections.head}}}
+</head>
+<body>
+<div class="top">
+    <ul class="list-inline">
+        {{#if role}}<li><a href="/getAllDatabasePage.do"><i></i>管理</a></li>{{/if}}
+        <li><a href="javaScript:;"><i></i>{{username}}</a></li>
+        <li><a href="/logout" class="logout"><i></i>退出</a></li>
+    </ul>
+    {{!--<a href='/'><img src="/image/logo2.png"></a>--}}
+    <a href='/' style="color: #fff;font-size: 27px;font-family: '黑体';padding-left: 25px;line-height: 54px;">八里庄云动中心数据库编码统一系统</a>
+</div>
+<div class="bread-nav">
+    当前位置：<a href='/'>首页</a>{{#if manage}}{{else}} > <a href="{{author.href}}">{{author.name}}</a>{{/if}}
+</div>
+<div class="toolbar">
+    <ul class="tools">
+        {{#if manage}}
+        <li class="layerManage">
+            <label style="float:none">图层管理：</label>
+            <div class="manage-toggle"></div>
+            <ul class="manage-list">
+                <li>监控探头<span></span></li>
+                <li>消防栓<span></span></li>
+            </ul>
+        </li>
+        {{/if}}
+        <li class="community">
+            <label>社区：</label>
+            <select id="community" data-placeholder="选择社区.." class="chzn-select" style="width:150px;" tabindex="2">
+                <option></option>
+                <option value="0">全部</option>
+                <option value="1">红庙</option>
+                <option value="2">华贸</option>
+                <option value="3">远洋天地</option>
+                <option value="4">城市华庭</option>
+                <option value="5">十里堡南里</option>
+                <option value="6">甘露园</option>
+                <option value="7">朝阳无限</option>
+                <option value="8">十里堡</option>
+                <option value="9">八里庄东里</option>
+                <option value="10">八里庄西里</option>
+                <option value="11">延静里</option>
+                <option value="12">红庙北里</option>
+                <option value="13">甘露园中里</option>
+                <option value="14">罗马嘉园</option>
+            </select>
+        </li>
+        <li class="gridSwitch">
+            <label>网格：</label>
+            <div class="gridBtn switch off">
+                <span class="switchP" style="left:1px"></span>
+            </div>
+        </li>
+        <li class="gridTool">
+            <label>网格层级：</label>
+            <div class="grid-tool-out">-</div>
+            <div class="grid-tool-axle">
+                <div class="grid-tool-before"></div>
+                <div class="grid-tool-bar">
+                    <div class="grid-tool-text">18</div>
+                </div>
+            </div>
+            <div class="grid-tool-in">+</div>
+        </li>
+        <li class="nameSwitch">
+            <label>社区名称：</label>
+            <div class="nameBtn switch on">
+                <span class="switchP" style="right:1px"></span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div id="content">
+    {{{body}}}
+</div>
+
+</body>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/leaflet-src.js"></script>
+<script src="/js/leaflet-heat.js"></script>
+<script src="/js/states.js"></script>
+<script src="/js/chosen.jquery.min.js" ></script>
+<script src="/ECharts/js/echarts.js" ></script>
+<script src="/js/switch.js" ></script>
+<script src="/js/jquery.pager.js" ></script>
+<script src="/js/slide.js" ></script>
+<script src="/js/leaflet.draw.js"></script>
+<script src="/js/leaflet.markercluster-src.js"></script>
+<script src="/js/bouncemarker.js"></script>
+
+<script type="text/javascript" src="/js/select2.min.js"></script>
+<script type="text/javascript" src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="/js/SimpleCanleder.js"></script>
+<script src="/js/array.js"></script>
+<script src="/js/coordtransform.js"></script>
+<script src="/js/layer/layer.js"></script>
+
+<script src="/js/tdtLayer.js"></script>
+<script src="/js/00.js"></script>
+{{{_sections.js}}}
+</html>

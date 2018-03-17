@@ -1,0 +1,12 @@
+.processStep span{
+    background:#143c5e;
+    color: #7f848b;
+}
+.processStep .activeStep.span4 span{
+    background:#1c6db0;
+}
+.treeHead{
+    background: #2c2f43;
+    border:1px solid #2c2f43;
+}
+

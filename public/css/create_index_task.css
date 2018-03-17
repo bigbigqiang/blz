@@ -1,0 +1,9 @@
+.moveBtn{
+    background: #2196f3;
+}
+#switch{
+    border-radius: 8px !important;
+}
+.checkStartTable  thead th{
+    color: #000;
+}

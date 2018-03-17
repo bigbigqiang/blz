@@ -1,0 +1,21 @@
+/*×ó±ßÀ¸²éÑ¯tipÑùÊ½*/
+#kinners_content{
+    margin: 0 0 0 11px;
+    width: 274px;
+    font-size: 12px;
+   }
+#kinners_content #tabs{height:22px;  overflow:hidden; position:relative;}
+#kinners_content #tabs #state{display:block; top:0; right:0; width:30px; height:30px; font-size:24px; font-weight:700; text-align:center; color:#fff; cursor:pointer; position:absolute;}
+#kinners_content #tabs li{display:inline; padding:0 8px; line-height:22px; color:#bebebe; list-style:none; cursor:pointer; float:left;border-top: 0;}
+#kinners_content #tabs .active{color:#e19496; background:#323637;}
+#kinners_content #list{}
+#kinners_content #list ul{padding-top: 5px; display:none;}
+#kinners_content #list ul li{
+    height: 14px;
+    line-height: 14px;
+    color: #bebebe;
+    margin-left: 8px;
+    border-bottom: none;
+    border-top: none;
+}
+#kinners_content #list .active{display:block;background:#323637;}

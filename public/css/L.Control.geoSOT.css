@@ -1,0 +1,62 @@
+.geoSOT-bar{
+    position: relative;
+    right: 69px;
+    width: 180px;
+    height: 52px;
+    text-align: center;
+    line-height: 32px;
+    /*box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.65);*/
+    top: -52px;
+    background-color: #383C3D;
+    border: 1px solid #666;
+    display: none;
+}
+.geoSOT{
+    float: left;
+}
+.geoSOT-HOME{
+    width: 54px;
+    height: 50px;
+    border-right: 1px solid #CECECE;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 50px;
+    color: #ccc;
+}
+.geoSOT-HOME:hover{
+    color: #E19496;
+}
+.geoSOT-OUT,.geoSOT-IN{
+    width: 52px;
+    height: 50px;
+    /*border: 1px solid #FFF;*/
+    background-color: #383C3D;
+    line-height: 53px;
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+}
+.geoSOT-TEXT{
+    height: 50px;
+    width: 20px;
+    color: #ccc;
+    font-size: 18px;
+    line-height: 50px;
+}
+.geoSOT-hover{
+    color: #E19496;
+}
+.geoSOT-disable{
+    color: #c3c3c3;
+}
+.geoSOT-BUBBLE{
+    position: absolute;
+    top:-10px;
+    left: 76px;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    display: block;
+}

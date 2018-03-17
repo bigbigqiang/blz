@@ -1,0 +1,214 @@
+#jsplumb-canvas{
+    width: 100%;
+    height: 643px;
+    overflow: auto;
+}
+.fusion-content{
+    width: 100%;
+    position: relative;
+    float: left;
+}
+.queryTest-content{
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    float: left;
+    display: none;
+}
+.queryTestTable{
+    overflow: auto;
+    width: 100%;
+    height: 627px;
+}
+.table-bordered th{
+    text-align: center;
+}
+.table-bordered td{
+    text-align: center;
+}
+.queryTest-content h4{
+    height: 30px;
+    font-size: 14px;
+    line-height: 13px;
+}
+.fusion-header{
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    margin: 0;
+
+    padding-left: 30px;
+    /*color: #fff;*/
+    background: #EAEAEA;
+}
+.treeHeader{
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    margin: 0;
+    padding-left: 25px;
+    /*color: #fff;*/
+    background: #EAEAEA;
+}
+.fusion-header label{
+    margin-top: 10px;
+    margin-right: 59px;
+}
+.fusion-header label input[type="checkbox"]{
+    margin: 0;
+}
+.left_tree{
+    width: 20%;
+}
+.database-tree{
+    width: 100%;
+    height: 770px;
+}
+.database-tree>h3{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0;
+    background: #242F36;
+    text-indent: 5px;
+    color: #fff;
+}
+.database-tree>.treeContent{
+    height: 740px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#queryTest,#queryTestBack{
+    height: 32px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 8px 10px;
+    letter-spacing: 0.1em;
+    font-family: "微软雅黑";
+    margin-top: 3px;
+    -webkit-border-radius: 2px!important;
+    -moz-border-radius: 2px!important;
+    border-radius: 2px!important;
+}
+
+.conditions{
+    position: relative;
+    min-height: 145px;
+    width: 100%;
+    display: none;
+}
+
+.conditions .condition_left{
+    width: 49%;
+    height: 100%;
+    float: left;
+    margin-right: 1%;
+    position: relative;
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #0e131a;
+}
+.conditions .condition_right{
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.condition_label{
+    float: left;
+    margin-top: 5px;
+}
+.condition{
+    width: 100%;
+    height: 30px;
+    padding: 5px 0 5px 10px;
+}
+#select_condi_model{
+    display: none;
+    position: absolute;
+    /*top: -85px;*/
+    width: 200px;
+    height: 105px;
+    padding: 5px;
+}
+#select_condi_model>input{
+    width: 186px;
+    height: 16px;
+}
+#select_condi_model>select{
+    width: 200px;
+}
+.selectCondiBtn{
+    text-align: center
+}
+.selectCondiBtn button{
+    margin-right: 10px;
+    width: 60px;
+    height: 26px;
+    border: 0;
+    background: #4b8df8;
+    color: white;
+    font-size: 12px;
+    line-height: 26px;
+}
+.selectCondiBtn button:hover{
+    background: #0055cc
+}
+.addCondition{
+    height: 32px;
+    padding: 9px 15px;
+    margin-top: 3px;
+    line-height: 14px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    font-family: "微软雅黑";
+    -webkit-border-radius: 2px!important;
+    -moz-border-radius: 2px!important;
+    border-radius: 2px!important;
+}
+
+.delete_condition{
+    height: 22px;
+    line-height: 22px;
+    font-size: 20px;
+    padding: 2px 7px;
+    letter-spacing: 0.1em;
+    font-family: "微软雅黑";
+}
+
+.dataDisplay{
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+}
+.select_field{
+    width:120px;
+    height: 26px;
+    margin-right: 5px;
+    font-size: 12px;
+    line-height: 17px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+.select_field::-ms-expand{
+    display: none;
+}
+
+.input_content{
+    width: 25%;
+    height: 26px;
+    padding: 1px 8px;
+    line-height: 26px;
+}
+.select_relationship{
+    width: 55px;
+    height: 30px;
+    border: 1px solid #aaa;
+    margin: 0 5px;
+}

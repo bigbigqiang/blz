@@ -1,0 +1,342 @@
+
+.container-fluid {
+
+    width: 89%;
+}
+.processStep{
+    padding: 10px;
+    height: 30px;
+}
+.portlet-body .row-fluid{
+    text-align: center;
+}
+.processStep li.span6{
+    float: left;
+    height: 22px;
+    margin-left: 0;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+}
+.processStep ul li{
+    width: 300px;
+}
+.processStep .activeStep.span6 span{
+    /*background: #35aa47 url("/image/step1.png") no-repeat right;*/
+    background: #2196f3;
+    color: white;
+}
+
+
+.processStep span{
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 30px;
+    background: #EAEAEA ;
+}
+.stepBtn .btn-abled {
+    background: #4b8df8;
+    color: white;
+}
+.btn-abled:hover{
+    background: #1567EC!important;
+    color: white;
+}
+/*上一步*/
+.btn-prev{
+    background: #4b8df8;
+}
+.btn-save{
+    background: #4b8df8;
+}
+.btn{
+    color: #fff;
+}
+.btn-update,.btn-reset {
+    background: #35aa47;
+}
+.btn-reset:hover{
+    background: #0e131a !important;
+    color: #FFFFFF;
+}
+/*更新*/
+
+#selectData{
+    padding: 20px;
+    text-align: center;
+}
+#selectData label{
+    /*display: inline-block;*/
+    /*width: 95px;*/
+    /*text-align: right;*/
+}
+/*选择数据源*/
+#selectData label span{
+    color: #f00;
+}
+#switchSource option,#selectData option{
+    width: 200px;
+}
+/*新建透视图*/
+.createPerspective{
+    display: none;
+}
+.row-fluid .offset1:first-child {
+    margin-left: 23.510638%;
+}
+@media (max-width: 979px) and (min-width: 768px) {
+    .row-fluid .offset1:first-child {
+        margin-left: 25.563536%;
+    }
+}
+@media (min-width: 1200px) {
+    .row-fluid .offset1:first-child {
+        margin-left: 23.547009%;
+    }
+}
+
+/*透视图中服务*/
+.service{
+    display: none;
+}
+.view{
+    display: none;
+}
+
+.dic{
+    display: none;
+}
+.msg,.error,.repeat{
+    display: none;
+    color: #f00;
+
+}
+/*.msg,.repeat{*/
+/*margin-right: -55px;*/
+/*}*/
+.error{
+    margin-right: -94px;
+}
+/*新建透视表*/
+#createPerspective h3,#dataClean h3{
+    border-bottom: 1px solid #2a3042;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding-left: 10px;
+    margin: 0;
+}
+#createPerspective h3 i,#dataClean h3 i{
+    margin-right: 5px;
+}
+#createPerspective .span4 h3,#dataClean .span4 h3{
+    font-size: 15px;
+}
+#createPerspective .span4 [class*='span'],#dataClean .span4 [class*='span']{
+    border: 1px solid #2a3042;
+    /*border-radius: 5px!important;*/
+    margin-bottom: 15px;
+    /*padding-bottom: 10px;*/
+}
+
+#createPerspective .span4 .span6,#dataClean .span4 .span6{
+    height: 150px;
+}
+#createPerspective .span4 .span12{
+    height: 200px;
+}
+#dataClean .span4 .span12{
+    height: auto !important;
+}
+/*字段列表*/
+#tableColumn{
+    text-align: left;
+    margin-top: 5px;
+    height: 130px;
+    /*color: #fff;*/
+}
+
+#tableColumn span{
+    cursor: move;
+}
+#tableColumn input{
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+    vertical-align: top;
+}
+#tableColumn .cb{
+
+    line-height: 0;
+    margin: 0;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 0 none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background: url("/image/checkbox.png") 480px;
+}
+#tableColumn .cbChecked{
+    line-height: 0;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 0 none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background: url("/image/checkbox.png") 306px 194px;
+}
+/*#column{
+    color: #fff;
+}
+#row{
+    color: #FFFFFF;
+}*/
+.dragDiv{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    color: #333!important;
+}
+.right{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.right ul{
+    margin: 1px 3px;
+    height: 107px;
+}
+.right .scrollLabel{
+    height: 109px;
+    overflow: auto;
+}
+.right li{
+    text-align: left;
+    padding-left: 3px;
+}
+.right li i{
+    float: right;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("/image/portlet-collapse-icon.png") no-repeat;
+}
+.right li i.active{
+    background: url("/image/portlet-expand-icon.png") no-repeat;
+}
+.right li{
+    border: 1px solid #acacac;
+    cursor: pointer;
+    position: relative;
+}
+.statistic li span{
+    color: #006dcc;
+}
+.right li b{
+    font-weight: normal;
+}
+.selList{
+    position: absolute;
+    width: 60px;
+    top:2px;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    box-shadow: 0 0 2px 2px #ddd;
+    background: #a9a9a9;
+    /*color: #fff;*/
+}
+#createPerspective>div>h3,#dataClean>div>h3{
+    margin-bottom: 20px;
+}
+#createPerspective .span8{
+    margin-left: 0;
+    visibility: hidden;
+}
+#dataClean table thead{
+    visibility: visible;
+
+}
+#dataClean table thead th{
+    border: none;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background: rgba(0,0,0,.75);
+}
+#tableBox{
+    width: 100%;
+    height: 650px;
+    overflow: auto;
+    /*color: #FFFFFF;*/
+}
+
+/*数据清洗css*/
+
+.clean{
+    height: 260px;
+}
+.innerBox{
+    text-align: left;
+    padding: 10px;
+    /*height: 150px;*/
+}
+.innerBox label{
+    display:inline-block;
+    width: 100px;
+    text-align: right;
+
+}
+/*.innerBox span{*/
+/*display: inline-block;*/
+/*width: 100px;*/
+/*text-align: right;*/
+/*}*/
+#clean{
+    height: 200px;
+}
+#dataClean table{
+    border: none;
+}
+#dataClean .span8{
+    margin-left: 0px;
+}
+
+#dataClean tbody td{
+    border-left: none;
+}
+#dataClean label{
+    border: none !important;
+}
+@media (min-width: 980px) {
+    .msg{
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+}
+@media (min-width: 580px) {
+    .msg{
+
+
+        font-size: 12px;
+    }
+
+}
+
+table {
+    color: #333;
+}

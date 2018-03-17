@@ -1,0 +1,188 @@
+/*前景色*/
+.front-bgcolor{
+    background-color: #191f28!important;
+}
+/*背景色*/
+.dark{
+    background-color: #191f28!important;
+    border:1px solid #31364c!important;
+}
+.light{
+    background-color: #FFFFFF!important;
+    border:1px solid #000000!important;
+}
+/*字体蓝色，由浅至深*/
+.color-blue1{
+    color: #90caf9;
+}
+.color-blue2{
+    color: #52abf1;
+}
+.color-blue3{
+    color: #2196f3;
+}
+.color-blue4{
+    color: #095ea1;
+}
+.row-fluid .portlet{
+    margin-bottom: 25px;
+}
+ /*状态统计*/
+.dashboard-stat .visual{
+    width: auto;
+    height: auto;
+    padding-top: 17px;
+    padding-left: 18px;
+}
+.dashboard-stat .visual i.dark-icon{
+    font-size: 40px;
+    color: #2196f3;
+}
+.dashboard-stat .details{
+    text-align: center;
+}
+.dashboard-stat .details h5{
+    color: #b5b4c2;
+    font-size: 16px;
+}
+.dashboard-stat .details .state-totalnum{
+    padding: 7px 6px;
+    font-size: 26px;
+    text-align: center;
+}
+.dashboard-stat .details .state-num{
+    font-size: 14px;
+}
+.state-num>span:nth-child(1){
+    color: #2196f3;
+}
+.state-num>span:nth-child(2){
+    color: #b4bfd1;
+}
+.dashboard-stat .details .state-num em{
+    font-style: normal;
+}
+.state-num>span:first-child{
+    margin-right:14px;
+}
+
+/*图表*/
+.chart{
+    width:100%;
+}
+#task-chart{
+    height: 250px;
+}
+#index-task-chart{
+    height: 265px;
+}
+#service-chart{
+    height: 173px;
+}
+#index-table-chart{
+    height: 283px;
+    padding-left: 19px;
+}
+/*发布服务情况*/
+.light-dark .border-right{
+    border-right:1px solid #585a65;
+}
+.light-dark .easy-pie-chart{
+    padding: 15px 0;
+}
+.light-dark .title{
+    margin-bottom: 16px;
+    font-size: 16px;
+    color:#eceef2;
+}
+.light-dark .number{
+    font-size: 21px;
+}
+#soap-num{
+    color: #fabe24;
+}
+#json-num{
+    color: #2e6eac;
+}
+    /*索引大表情况*/
+.portlet.solid{
+    padding: 10px 0 0 0;
+}
+.portlet.solid .portlet-title{
+    padding: 0 19px;
+}
+.portlet-title>.caption{
+    color: white;
+}
+
+/*索引大表编码总量*/
+.caption.span7{
+    margin-left: 17px!important;
+    padding: 20px 0 20px 0;
+}
+#index-table-totalnum{
+    padding: 20px 0;
+ }
+.caption.span7 i{
+    color: #e8c260;
+    margin-right:10px;
+}
+.caption.span7 span{
+    line-height: 40px;
+    color: #eceef2;
+}
+.btn.dark:hover{
+    color: white;
+    background-color:#2196f3!important;
+}
+.btn.dark{
+    color: #e1e2e2;
+}
+.light-dark{
+    background-color: #393b48!important;
+}
+#index-table-totalnum p{
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    line-height: 32px;
+}
+#index-table-totalnum .progress{
+    margin-bottom: 0;
+    height: 8px;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    border-radius: 5px !important;
+    background-color: #424c5a!important;
+    background-image: none;
+}
+#index-table-totalnum .bar{
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    border-radius: 5px !important;
+    background-color: #2196f3!important;
+}
+/*编码量排行*/
+#table-range{
+    height: 223px;
+    padding: 0 10px 10px 19px;
+}
+
+#table-range .table,#table-range th,#table-range td{
+    border-color:#42474f!important;
+}
+#table-range th{
+    background-color: #2d323b;
+    color: #c1c2c5;
+}
+#table-range td{
+    color: #90a4ae;
+}
+.mCSB_container_wrapper{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.mCSB_container_wrapper>.mCSB_container{
+    padding-right: 8px;
+}

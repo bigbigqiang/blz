@@ -1,0 +1,40 @@
+/*measure_tool style*/
+
+.measure_tool {
+    position: relative;
+    right: 90px;
+    top: 181px;
+}
+
+.measure_distance {
+    position: absolute;
+    right: 34px;
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+.measure_distance.enabled .leaflet-control-draw-measure{
+    opacity: 0.5;
+}
+.leaflet-control-draw-measure {
+    display: block;
+    width: 52px;
+    height: 49px;
+    background:#383c3d url("../image/measure_ruler.png") no-repeat center;
+}
+
+
+.leaflet-control-measure {
+    position: absolute;
+    right: 87px;
+}
+
+/*measure edit line style*/
+.leaflet-div-icon {
+    background: url("../image/measure_dot.png") no-repeat;
+    border: none;
+}
+
+.leaflet-mouse-marker {
+    background-color: #fff;
+    cursor: url("../image/ruler.cur"), crosshair;
+}

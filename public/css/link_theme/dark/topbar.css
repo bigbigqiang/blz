@@ -1,0 +1,13 @@
+.header .navbar-inner,.navbar-inverse .navbar-inner{
+    background-color: #191f28!important;
+    border-bottom:1px solid #191f28!important;
+    background-image: none;
+}
+.brand.logo{
+    text-align: center;
+    background-color: #0e131a!important;
+}
+.treeHeader{
+    color: #fff;
+    background: #2c2f43;
+}

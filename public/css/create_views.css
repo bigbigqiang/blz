@@ -1,0 +1,146 @@
+.processStep{
+    padding: 10px;
+    height: 30px;
+}
+.processStep li.span4{
+    float: left;
+    height: 22px;
+    margin-left: 0;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+}
+
+
+.processStep .activeStep.span4 span{
+    /*background: #35aa47 url("/image/step1.png") no-repeat right;*/
+    background: #35aa47;
+    color: white;
+}
+.processStep .activeStep.span4 i{
+    background: #35aa47 url("/image/step1.png") no-repeat;
+    background-position: 9px -30px;
+}
+.processStep i{
+    display: inline-block;
+    float: right;
+    width: 10%;
+    height: 30px;
+    background: #35aa47 url("/image/step1.png") no-repeat;
+    background-position: 9px -60px;
+}
+.processStep span{
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 30px;
+    background: #EAEAEA ;
+}
+.treeContainer{
+     margin:30px 0;
+}
+#selectSource{
+   margin-left: 37px;
+}
+#selectSource,#cfgConnect,#saveView{
+    height:689px;
+    background: #f3f3f3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.3); 
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    overflow: auto;
+}
+.btnGroup{
+    margin-top: 300px;
+    text-align: center;
+}
+.btnGroup button{
+    margin-bottom: 10px;
+}
+
+.treeHead{
+    height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: bold;
+    background: #35aa47;
+    border:1px solid #35aa47;
+     -webkit-border-top-left-radius: 3px!important;
+    -moz-border-top-left-radius: 3px!important;
+    border-top-left-radius: 3px!important;
+    -webkit-border-top-right-radius: 3px!important;
+    -moz-border-top-right-radius: 3px!important;
+    border-top-right-radius: 3px!important;
+}
+#viewStepTwo{
+    margin-top: 30px;
+}
+.saveViewForm{
+    margin-top: 20px;
+}
+#tree1,#tree2,#tree3{
+    /*overflow: scroll;*/
+}
+.ztree li a.curSelectedNode{
+    background-color: #4b8df8!important;
+    color: white!important;
+    border: none!important;
+}
+.ztree li a.disabledSelectedNode{
+    background: #f3f3f3;
+    color: #B1A4A4;
+    cursor: default;
+}
+.left_tree .ztree li a.disabledSelectedNode{
+    color: #515151;
+}
+.ztree li a.disabledSelectedNode:hover{
+    text-decoration: none;
+    cursor: default;
+}
+.ligatureTable .lat{
+    background: #35AA47;
+    text-indent: 5px;
+    color: #fff;
+    height: 18px;
+    padding: 0 5px;
+    border: 1px solid #fff;
+    line-height: 18px;
+}
+.ligatureTable .lng{
+    background: #D29F09;
+    color: #fff;
+    text-indent: 5px;
+    height: 18px;
+    border: 1px solid #fff;
+    line-height: 18px;
+}
+.ligatureTable .lat,.ligatureTable .lng{
+    padding: 0 5px;
+}
+.lastLigature{
+    height: 42px !important
+}
+.latLngRemove{
+    margin-right: 3px;
+    cursor: pointer;
+}
+/*�����ֵ�*/
+#dicResult .table label{
+    margin: 0;
+    padding: 0;
+    background-color: white!important;
+}
+
+.left_tree {height: 689px; box-shadow: 0 0 10px rgba(0,0,0,0.3);}
+.sourceTree {height: 95%;}
+.sourceTree .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {background-color: rgba(23, 23, 23, 0.75);}
+#dicResult label {
+    color: #515151;
+}

@@ -1,0 +1,39 @@
+/* attribution and scale controls */
+
+.aero-control-scale-line {
+    padding: 0 5px;
+    color: #333;
+}
+
+.leaflet-container .aero-control-scale {
+    font-size: 11px;
+}
+.leaflet-left .aero-control-scale {
+    margin-left: 5px;
+}
+.leaflet-bottom .aero-control-scale {
+    margin-bottom: 5px;
+}
+.aero-control-scale-line {
+    border: 2px solid #777;
+    border-top: none;
+    line-height: 1.1;
+    padding: 2px 5px 1px;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+
+    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+}
+.aero-control-scale-line:not(:first-child) {
+    border-top: 2px solid #777;
+    border-bottom: none;
+    margin-top: -2px;
+}
+.aero-control-scale-line:not(:first-child):not(:last-child) {
+    border-bottom: 2px solid #777;
+}
+

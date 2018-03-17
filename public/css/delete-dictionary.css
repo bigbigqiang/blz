@@ -1,0 +1,6 @@
+.delete_dictionary{margin: 30px auto;width: 600px;background-color: #b2b2b2;}
+.delete_dictionary .dictionaryName{background-color:#e7effd;height: 30px;margin: 5px;float: left;display: inline-block;}
+.delete_dictionary .dictionaryName p{color: #777;display: inline-block;margin-left: 3px;margin-right:3px;height: 30px;line-height: 30px}
+.delete_dictionary .dictionaryName input{display: inline-block;margin-top: 1px;margin-left: 2px}
+.delete_dictionary .dictionaryName:hover{background-color:#4b8df8;}
+.delete_dictionary .dictionaryName p:hover{color: #fff}

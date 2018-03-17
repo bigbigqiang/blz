@@ -1,0 +1,181 @@
+/*企业详情页面*/
+.infoContent{
+    padding: 20px 32px;
+    overflow: hidden;
+}
+
+.infoList{
+    width: 33%;
+    float: left;
+    margin-right: 0.3%;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+.infoList:last-child {
+    margin-right: 0;
+}
+.infoBox h3 {
+    width: 80%;
+    font-size: 16px;
+    color: #006bd6;
+    line-height: 30px;
+    padding-left: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.checkList h3 {
+    border: 0;
+}
+.infoList li{
+    color: #262b2e;
+    line-height: 30px;
+}
+.infoAttrName span{
+    color: #006bd6;
+    display: inline-block;
+    width: 72px;
+    text-align: right;
+}
+.infoAttrName2 span{
+    width: 85px;
+}
+.infoAttrName3 span{
+    width: 100px;
+}
+.checkList {
+    width: 49%;
+    float:left;
+}
+.infoContent .informationTable{
+    margin: 0;
+}
+.infoContent .informationTable thead td{
+    color: #006bd6;
+    height: 32px;
+    line-height: 30px;
+}
+.infoContent .informationTable tbody td {
+    color: #262b2e;
+    height: 30px;
+    line-height: 30px;
+}
+.informationBox:not(.buildingDetail) .informationTable tbody tr:hover {
+    background: #006bd6;
+    color: #fff;
+}
+.informationBox:not(.buildingDetail) .informationTable tbody tr:hover td {
+    color: #fff;
+    border: 1px solid #006bd6;
+}
+.buildingDetail .informationTable tbody tr:hover td:first-child {
+    color: #006bd6;
+}
+
+/*建筑详情*/
+.informationH5{
+    color: #006bd6;
+    padding-left: 10px;
+    line-height: 38px;
+    border-bottom:1px solid #e5e5e5;
+}
+.floorList{
+    display: none;
+    margin-top: 13px;
+}
+.floorList.active{
+    display: block;
+}
+.star{
+    display: inline-block;
+    height: 17px;
+    width: 18px;
+    background: url("../image/star.png") no-repeat;
+}
+.informationH5 ul{
+    height: 30px;
+    width: 60%;
+    float: right;
+    margin-top: 4px;
+    margin-right: 15px;
+}
+.informationH5 li{
+    float: right;
+    height: 100%;
+    color: #262b2e;
+    padding: 0 12px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #006bd6;
+    cursor: pointer;
+}
+.houseTab li.active{
+    background-color: #006bd6;
+    color: #fff;
+}
+.roomDetail td {
+    border: 0;
+}
+.roomDetail tbody tr:nth-child(odd) {
+    background: #f0f0f0;
+}
+.roomDetail ul i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../image/roomBack.png") no-repeat left;
+    vertical-align: middle;
+}
+.roomDetail td {
+    height: 40px!important;
+    line-height: 40px!important;
+}
+.floorTab{
+    height: 87%;
+    width: 100%;
+}
+.floorTab li{
+    height: 40px;
+    /*margin-bottom: 10px;*/
+}
+.floorTab li:nth-child(odd){
+    background: #f0f0f0;
+}
+.floorTab li .floorNum{
+    height: 100%;
+    color: #006bd6!important;
+    text-align: center;
+    float: left;
+    line-height: 40px;
+}
+.floorTab li .rooms{
+    height: 100%;
+    float: left;
+    padding-left: 2%;
+}
+.floorTab li .rooms span{
+    color: #262b2e;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.floorTab li .rooms span:hover{
+    color: #4879df;
+}
+#cmpTable {
+    padding: 15px 20px;
+}
+table.informationTable.cmpList span:nth-child(odd):not(:first-child) {
+    margin-left: 5%;
+}
+#cmpTable span:last-child {
+    vertical-align: middle;
+}
+/*跳转*/
+.infoAttrName li a {
+    vertical-align: middle;
+    display: inline-block;
+    width: 13px;
+    height: 15px;
+    background: url('../image/goto-detail.png') no-repeat center center;
+}

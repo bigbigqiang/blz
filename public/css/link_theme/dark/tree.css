@@ -1,0 +1,55 @@
+#saveView,#selectSource,#cfgConnect{
+    background-color:#191f28;
+    border: 1px solid #343950;
+}
+.ztree li a{
+    display: inline-block!important;
+    color:#9b9ca0!important;
+    font-size: 12px;
+    height: 22px!important;
+    line-height:22px;
+}
+.ztree li span.button.chk{
+    margin: 8px 3px 0 0;
+}
+.sourceTree{
+    height: 633px;
+    overflow: auto;
+}
+.sourceTree li a.curSelectedNode{
+    background: none!important;
+}
+.btn-dark{
+    width: 42px;
+    height: 42px;
+    background-color: #2196f3!important;
+    -webkit-border-radius: 1px!important;
+    -moz-border-radius: 1px!important;
+    border-radius: 1px!important;
+}
+.btn-dark>i{
+    color: white;
+}
+.btn-dark:hover,.btn-dark:active,.btn-dark:focus{
+    color: white;
+    background-color: #1b6fb2!important;
+}
+.stepBtn .btn-abled{
+    border: 1px solid #efb52a;
+    background:transparent;
+    color: #efb52a;
+    -webkit-border-radius: 2px!important;
+    -moz-border-radius: 2px!important;
+    border-radius: 2px!important;
+}
+.stepBtn .btn-abled:hover,.stepBtn .btn-primary:hover{
+    background: #7f6422!important;
+    color: #efb52a;
+}
+.ztree li ul.line{
+    background: none!important;
+}
+.mCSB_container_wrapper{
+    margin-right: 10px!important;
+    margin-bottom: 10px!important;
+}

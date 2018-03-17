@@ -1,0 +1,133 @@
+{{#section 'head'}}
+<link  rel="stylesheet" href="/css/statistic_event.css" >
+{{/section}}
+
+<div class="left">
+    <div class="left-type-select">
+        <div class="left-header">
+            <span class="left-title">社区名称</span>
+            <select id="comm" data-placeholder="" class="chzn-select" style="width:150px!important;" tabindex="2">
+                <option value="0">全部</option>
+                <option value="1">红庙</option>
+                <option value="2">华贸</option>
+                <option value="3">远洋天地</option>
+                <option value="4">城市华庭</option>
+                <option value="5">十里堡南里</option>
+                <option value="6">甘露园</option>
+                <option value="7">朝阳无限</option>
+                <option value="8">十里堡</option>
+                <option value="9">八里庄东里</option>
+                <option value="10">八里庄西里</option>
+                <option value="11">延静里</option>
+                <option value="12">红庙北里</option>
+                <option value="13">甘露园中里</option>
+                <option value="14">罗马嘉园</option>
+            </select>
+            <span class="left-title">状态</span>
+            <select id="status" data-placeholder=" " class="chzn-select" style="width:150px;" tabindex="3">
+                <option value="9">全部</option>
+                <option value="1">待网格员分配</option>
+                <option value="2">待科室/社区分配</option>
+                <option value="3">待处理</option>
+                <option value="4">待审核</option> 
+                <option value="5">审核不通过</option>
+                <option value="6">待复核</option>
+                <option value="7">复核不通过</option>
+                <option value="8">已结案</option>
+            </select>
+            <span class="left-title">选择日期</span>
+            <input type="text" class="calendar" id="beginDate">
+            <input type="text" class="calendar" id="endDate">
+            <button id="searchBtn" class="btn btn-primary">查询</button>
+        </div>
+        <div class="toggle-modal">共<span></span>条结果</div>
+        <div class="left-modal">
+            <ul id="eventList"></ul>
+        </div>
+    </div>
+    <div id="map" style="height:100%">
+        <div class="deleteShape"></div>
+        <div class="geoSOTCode"></div>
+        <div class="legend">
+            <div class="warning-list">
+                <span class="blt"></span>
+                <span class="blb"></span>
+                <span class="brt"></span>
+                <span class="brb"></span>
+                <ul class="legend-type">
+                    <li class="active"><span class="event-statistic-icon1"></span>红<label>0</label><i></i></li>
+                    <li class="active"><span class="event-statistic-icon2"></span>橙<label>0</label><i></i></li>
+                    <li class="active"><span class="event-statistic-icon3"></span>黄<label>0</label><i></i></li>
+                    <li class="active"><span class="event-statistic-icon4"></span>蓝<label>0</label><i></i></li>
+                </ul>
+            </div>
+            <div class="classify-list">
+                <span class="blt"></span>
+                <span class="blb"></span>
+                <span class="brt"></span>
+                <span class="brb"></span>
+                <ul class="legend-type">
+                    <li class="active"><span class="event-blue-type1"></span>市容环境<i></i></li>
+                    <li class="active"><span class="event-blue-type2"></span>宣传广告<i></i></li>
+                    <li class="active"><span class="event-blue-type3"></span>施工管理<i></i></li>
+                    <li class="active"><span class="event-blue-type4"></span>突发事件<i></i></li>
+                    <li class="active"><span class="event-blue-type5"></span>街面秩序<i></i></li>
+                    <li class="active"><span class="event-blue-type6"></span>单位<i></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="right">
+    <div class="informationBox" style="width:100%;height: 33%;margin-bottom: 5px;">
+        <h4 class="header-4">
+            社区统计
+        </h4>
+        <div class="infoContent">
+            <div class="chart commChart" style="width:49.9%;float: left;" id="chart10"></div>
+            <div class="chart commChart" style="width:49.9%;float: right;" id="chart11"></div>
+            <div class="eventBox pieBox">
+                <div>
+                    <div class="pieChart" id="pie1"></div>
+                    <span class="pieText" style="background: #ff5c5c">0</span>
+                </div>
+                <div>
+                    <div class="pieChart" id="pie2"></div>
+                    <span class="pieText" style="background: #ff7733">0</span>
+                </div>
+                <div>
+                    <div class="pieChart" id="pie3"></div>
+                    <span class="pieText" style="background: #fdaa29">0</span>
+                </div>
+                <div>
+                    <div class="pieChart" id="pie4"></div>
+                    <span class="pieText" style="background: #32a3fa">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="informationBox" style="width:100%;height: 33%;margin-bottom: 5px;">
+        <h4 class="header-4">
+            分类统计
+        </h4>
+        <div class="infoContent">
+            <div class="chart" id="chart2"></div>
+        </div>
+    </div>
+    <div class="informationBox" style="width:100%;height: 33%;">
+        <h4 class="header-4">
+            状态统计
+        </h4>
+        <div class="infoContent">
+            <div class="chart" id="chart3"></div>
+        </div>
+    </div>
+</div>
+<div id="loading" style="position:fixed;top:0;left:0;bottom:0;right:0;display: none;">
+    <img style="position:absolute;top:50%;left:33%;margin-left:-30px;" src="/js/layer/skin/default/loading-0.gif" alt="">
+</div>
+
+{{#section 'js'}}
+<script src="/js/statistic_event.js" ></script>
+{{/section}}

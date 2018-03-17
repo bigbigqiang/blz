@@ -1,0 +1,73 @@
+{{#section 'head'}}
+<link rel="stylesheet" href="/css/statistic_people.css" >
+{{/section}}
+<div class="left">
+    <div class="search-box">
+        <div class="search-input">
+            <input id="search-input" class="search-input" value=""/>
+            <ul class="result-list">
+                <li>选项</li>
+            </ul>
+        </div>
+        <div id="search"></div>
+    </div>
+    <div id="map" style="height:100%">
+        <div class="geoSOTCode"></div>
+        <div class="deleteShape" style="top:1px"></div>
+        <div class="legend">
+            <span class="blt"></span>
+            <span class="blb"></span>
+            <span class="brt"></span>
+            <span class="brb"></span>
+            <ul class="legend-color">
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+            </ul>
+            <ul class="legend-count">
+                <li><label></label> 0</li>
+                <li><label></label> 200</li>
+                <li><label></label> 400</li>
+                <li><label></label> 600</li>
+                <li><label></label> 800</li>
+                <li><label></label> 1000</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="right">
+    <div class="informationBox" style="width:100%;height: 33%;margin-bottom: 5px;">
+        <h4 class="header-4">
+            人口总量变化
+        </h4>
+        <div class="infoContent">
+            <div class="chart" id="chart1"></div>
+        </div>
+    </div>
+
+    <div class="informationBox" style="width:100%;height: 33%;margin-bottom: 5px;">
+        <h4 class="header-4">
+            文化程度
+        </h4>
+        <div class="infoContent">
+            <div class="chart" id="chart2"></div>
+        </div>
+    </div>
+    <div class="informationBox" style="width:100%;height: 33%;">
+        <h4 class="header-4">
+            本地人口/外来人口数量变化
+        </h4>
+        <div class="infoContent">
+            <div class="chart" id="chart3"></div>
+        </div>
+    </div>
+</div>
+<div id="loading" style="position:fixed;top:0;left:0;bottom:0;right:0;display: none;">
+    <img style="position:absolute;top:50%;left:33%;margin-left:-30px;" src="/js/layer/skin/default/loading-0.gif" alt="">
+</div>
+
+{{#section 'js'}}
+<script src="/js/statistic_people.js" ></script>
+{{/section}}

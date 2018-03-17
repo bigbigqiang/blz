@@ -1,0 +1,104 @@
+<!-- BEGIN SIDEBAR -->
+<div class="page-sidebar nav-collapse collapse">
+    <!-- BEGIN SIDEBAR MENU -->
+    <ul class="page-sidebar-menu">
+        <li>
+            <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+            <div class="sidebar-toggler hidden-phone margin-bottom-10"></div>
+            <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+        </li>
+        <li class="active">
+            <ul class="sub-menu">
+                <!--<li class="">-->
+                    <!--<a href="./index.do">-->
+                        <!--<i class="iconfont icon-link_shouye"></i> <span class="title">首页</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="iconfont icon-link_shujuyuanguanli"></i><span class="title">数据源管理</span><span class="arrow open"></span>
+                    </a>
+                    <ul class="sub-menu third-level">
+                        <li><a href="./getAllDatabasePage.do">数据库适配</a></li>
+                        <li><a href="./acsServices_cfg">服务适配</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="iconfont icon-link_shujuronghepeizhi"></i> <span class="title">数据融合配置</span><span class="arrow open"></span>
+                    </a>
+                    <ul class="sub-menu third-level">
+                        <li><a href="./createView.do">新建视图</a></li>
+                        <li><a href="./viewManager.do">视图管理</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="iconfont icon-link_shujuhebingpeizhi"></i> <span class="title">数据合并配置</span><span class="arrow open"></span>
+                    </a>
+                    <ul class="sub-menu third-level">
+                        <li><a href="./definedDic.do">定义字典</a></li>
+                        <li><a href="./dicManager.do">字典管理</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="./user_manager">
+                        <i class="iconfont icon-link_shujuchuli"></i> <span class="title">数据处理</span><span class="arrow open"></span>
+                    </a>
+                    <ul class="sub-menu third-level">
+                        <li><a href="./dataClean.do">数据清洗</a></li>
+                        <li><a href="./dataCleanManager.do">清洗任务管理</a></li>
+                        <li><a href="./dataPerspective.do">数据透视</a></li>
+                        <li><a href="./perspectiveManager.do">透视表管理</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="iconfont icon-link_fuwuguanli"></i> <span class="title">服务管理</span><span class="arrow open"></span>
+                    </a>
+                    <ul class="sub-menu third-level">
+                        <li><a href="./releaseService.do">发布服务</a></li>
+                        <li><a href="./serviceManager.do">服务管理</a></li>
+                        <!--<li><a href="./ffff">订阅服务</a></li>-->
+                        <!--<li><a href="./ffff">订阅管理</a></li>-->
+                    </ul>
+                </li>
+
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="icon-cog"></i> <span class="title">编码索引管理</span><span class="arrow open"></span>
+                    </a>
+                    <ul class="sub-menu third-level">
+                        <li><a href="./createIndexTask.do">新建索引任务</a></li>
+                        <li><a href="./indexManager.do">索引任务管理</a></li>
+                        <li><a href="./indexLargeManager.do">索引大表管理</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="./hhhh.do">
+                        <i class="iconfont icon-link_shujuqianxi"></i> <span class="title">数据迁移</span><span class="arrow open"></span>
+                        <span class="selected"></span>
+                    </a>
+                    <ul class="sub-menu third-level">
+                        <li><a href="./createMigration.do">新建迁移作业</a></li>
+                        <li><a href="./migrate_assignments.do">迁移作业管理</a></li>
+                    </ul>
+                </li>
+                {{#if role}}
+                <li class="">
+                    <a href="./hhhh.do">
+                        <i class="icon-cog"></i> <span class="title">权限管理</span><span class="arrow open"></span>
+                        <span class="selected"></span>
+                    </a>
+                      <ul class="sub-menu third-level">
+                        <li><a href="./userManager.do">用户管理</a></li>
+                    </ul>
+                </li>
+                {{/if}}
+            </ul>
+            <span class="selected"></span></li>
+    </ul>
+    <!-- END SIDEBAR MENU -->
+</div>
+<!-- END SIDEBAR -->
+

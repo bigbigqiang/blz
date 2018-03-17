@@ -1,0 +1,101 @@
+<div>
+    <label class="pull-left" style="margin-top: 5px">选择场景：</label>
+    <select class="sceneSelect">
+        <option value="0">请选择业务场景</option>
+        {{#each sourceType}}
+            <option value={{id}}>{{sourceType}}</option>
+        {{/each}}
+    </select>
+</div>
+<div class="left_tree pull-left">
+    <div class="treeHeader">数据库结构</div>
+</div>
+<div class="fusion-content jtk-demo-canvas canvas-wide statemachine-demo jtk-surface jtk-surface-nopan" id="canvas">
+    <div class="fusion-header ">
+        <label class="pull-left"><input id="query_condition" type="checkbox">条件查询</label>
+        <label class="pull-left"><input id="sort_condition" type="checkbox">排序</label>
+        <button id="queryTest" type="button" class="pull-right btn  green">查询测试</button>
+    </div>
+    <div class="conditions">
+        <div class="condition_left">
+            <div class="fusion-header ">
+                查询条件
+                <button id="addInquire" type="button" class="pull-right btn green addCondition">+</button>
+            </div>
+            <div class="condition">
+                <label class="condition_label">条件1：</label>
+                <input type="text" class="input_content pull-left">
+                <select class="select_relationship pull-left" >
+                    <option>=</option>
+                    <option>></option>
+                    <option><</option>
+                    <option>><</option>
+                    <option>IN</option>
+                </select>
+                <input type="text" class="input_content pull-left">
+                <button type="button" class="btn red delete_condition" >X</button>
+            </div>
+        </div>
+         <div id="select_condi_model">
+                    <select class="select_field pull-left select_val"></select>
+                    <input type="text" class="input_field select_val">
+                    <div class="selectCondiBtn">
+                        <button type="button" id="confirmSelectCondi">确定</button>
+                        <button type="button" id="cancelSelectCondi">取消</button>
+                    </div>
+                </div>
+        <div class="condition_right">
+            <div class="fusion-header ">
+                排序条件
+                <button id="addSort" type="button" class="pull-right btn green addCondition">+</button>
+            </div>
+            <div class="condition">
+                <label class="condition_label">条件1：</label>
+                <select class="select_field pull-left">
+                </select>
+                <div name="ASC" class="condition_switch">
+                    <span>ASC</span>
+                    <span>DESC</span>
+                    <div class="switch_bar"></div>
+                </div>
+                <button type="button" class=" btn red delete_condition">X</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="queryTest-content">
+    <div class="fusion-header ">
+        <h4 class="pull-left">查询测试</h4>
+        <button id="queryTestBack" type="button" class="pull-right btn  green">返回</button>
+    </div>
+    <div class="queryTestTable">
+        <table class="table table-striped table-hover table-bordered databaseType"></table>
+    </div>
+
+</div>
+<div class="tablebg-grey"></div>
+<div class="changeLabel" style="display: none;">
+    <h4>
+        <i class="icon-edit"></i>选择链接关系<img src="image/portlet-remove-icon-white.png"/>
+    </h4>
+    <form>
+        <p class="input-text">
+            <label>连接类型</label>
+            <select id="labelType" name="labelType">
+                <option value="CROSSJOIN">CROSSJOIN</option>
+                <option value="FULLJOIN">FULLJOIN</option>
+                <option value="RIGHTJOIN">RIGHTJOIN</option>
+                <option value="LEFTJOIN">LEFTJOIN</option>
+                <option value="INNERJOIN">INNERJOIN</option>
+            </select>
+        </p>
+        <p class="btn-form">
+            <span><input type="button" value="确 定" id="confirmLabel"> </span>
+        </p>
+        <input type="hidden" name="flag" value="default"> <input type="hidden" name="target" value="self">
+    </form>
+</div>
+{{>common_js}}
+<script type="text/javascript" src="js/jsPlumb-2.2.3.js"></script>
+<script type="text/javascript" src="js/jstree.min.js"></script>
+<script src="js/fusion.js"></script>

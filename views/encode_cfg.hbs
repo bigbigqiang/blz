@@ -1,0 +1,42 @@
+{{#extend "stylesheets"}}
+    <link rel="stylesheet" href="css/chosen.css"/>
+{{/extend}}
+<div class="clearfix">
+    <div class="span3">
+        <select class="database-type select-dbsource">
+            <option>选择数据库源</option>
+            {{#each dbSource}}
+                <option id={{databaseId}} value={{databaseId}}>{{databaseType}}:{{databaseName}}</option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="span3">
+        <select class="encodeTable">
+        </select>
+    </div>
+    <div class="span3">
+        <select data-placeholder="选择列" class="chosen-select encodeColumn" multiple style="width:270px;" tabindex="4"
+                id="chosen-col">
+        </select>
+    </div>
+    <div class="span3">
+        <select class="code-type">
+            <option>选择编码类型</option>
+            {{#each encodeTypes}}
+                <option id={{id}} value={{id}}>{{codeTypeName}}</option>
+            {{/each}}
+        </select>
+    </div>
+</div>
+<div class="text-center" style="margin-top: 50px">
+    <button class="btn green" id="generateCode"> 生成编码 <i class="icon-plus"></i></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+{{>common_js}}
+<script src="js/chosen.jquery.js"></script>
+<script src="js/encode_cfg.js"></script>

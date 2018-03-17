@@ -1,0 +1,38 @@
+.legend ul {
+    float: left;
+    height: 100%;
+}
+.legend-color {
+    width: 27px;
+    padding: 18px 0 18px 14px;
+}
+.legend-count {
+    width: 65%;
+    padding: 10px 0;
+}
+.legend-color span {
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+}
+.legend-count label {
+    width: 7px;
+    height: 1px;
+    border-top: 1px solid #d4d5d5;
+    margin-bottom: 4px;
+}
+.legend-color li:first-child span {
+    background: #0000ff;
+}
+.legend-color li:nth-child(2) span {
+    background: #12e636;
+}
+.legend-color li:nth-child(3) span {
+    background: #fff100;
+}
+.legend-color li:nth-child(4) span {
+    background: #ef8904;
+}
+.legend-color li:nth-child(5) span {
+    background: #ed1e02;
+}

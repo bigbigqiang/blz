@@ -1,0 +1,6 @@
+.aero-point-info {padding-left: 150px !important;margin-top: 2px !important; margin-right:0 !important; margin-bottom:0 !important;}
+    .leaflet-control-container .aero-point-info{
+        background:url(../image/bg-right-bottom.png) no-repeat left bottom;
+        height: 21px;
+        padding-right: 25px; padding-top:2px;
+		color:#000}

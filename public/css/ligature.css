@@ -1,0 +1,255 @@
+body.page-header-fixed{
+    overflow-y: scroll;
+}
+.ligatureContennner{
+    width: 100%;
+    min-height: 500px;
+    margin-top: 30px;
+    position: relative;
+    border: 1px solid #b4cef8;
+}
+.ligatureTable{
+    min-width: 258px;
+    /*max-height: 256px;*/
+    min-height: 100px;
+    float: left;
+    margin:14px 40px;
+    border: 1px solid #9E9E9E;
+}
+.all-field{
+    height: 119px;
+    overflow: auto;
+}
+.ligature-title{
+    height: 44px;
+    padding: 2px 10px 2px 7px;
+    position: relative;
+    cursor: move;
+    font-size: 12px;
+    line-height: 44px;
+    background: #eaeaea;
+}
+.ligature-title>span{
+    max-width: 108px;
+}
+.ligature-title>input{
+    margin:16px 5px 0 8px;
+}
+.ligature-title>i{
+    margin-right:10px;
+    margin-left:10px;
+    font-size: 16px;
+    color: #2196f3;
+}
+.ligature-title .btn-group{
+    margin-bottom: 0!important;
+}
+.ligature-title .btn-group>.btn{
+    padding: 2px 5px;
+    margin-left: -4px;
+    /*background: #0e131a !important;*/
+    border:none;
+    font-size: 12px;
+    color: white;
+    -webkit-border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
+    border-radius: 2px !important;
+}
+
+.ligature-title .btn-group>.btn:nth-child(2){
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+.ligature-title .btn-group>.btn:hover,.ligature-title .btn-group>.btn.btn-active{
+    background: #2196f3 !important;
+}
+.ligature-title>img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.ligatureTable li .icon-edit{
+    float: right;
+    margin: 3px 7px 0 1px;
+    font-size: 16px;
+    /*position: absolute;*/
+    right: 10px;
+}
+.ligatureRemove{
+    cursor: pointer;
+}
+.ligatureTable ul{
+    list-style: none;
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+.ligatureTable ul>li{
+    height: 22px;
+    padding: 0 10px;
+    margin-bottom: 1px;
+}
+.ligatureTable ul>li:hover{
+    background: #eaeaea;
+}
+.ligatureTable ul>li>img{
+    margin-right: 5px;
+}
+.ligatureTable ul>li input[type='checkbox']{
+    /*position: absolute;*/
+    left: 0;
+    margin-top: -2px;
+    /*margin-left: -5px;*/
+    margin-left:4px;
+    /*margin-right: 13px;*/
+}
+
+/*连线插件css*/
+/**当拖动一个连接点时，可连接的连接点会自动使用该css**/
+.dragActive {
+    border: 2px dotted orange;
+}
+
+/**当拖动一个连接点到可连接的点时，该点会自动使用该css**/
+.dropHover {
+    border: 1px dotted red;
+}
+
+.dataDables{
+    width: 150px;
+    min-height: 180px;
+    background: #ddddff;
+}
+.dataDables .tableHeader{
+    height: 30px;
+    background-color: #103a4c;
+    color: #fff;
+    line-height: 30px;
+
+}
+.dataDables ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.dataDables ul>li{
+    height: 25px;
+    border-bottom: 1px solid saddlebrown;
+    margin-bottom: 1px;
+    line-height: 25px;
+
+}
+.t {
+    padding: 2px;
+    position: relative;
+    /*z-index: 4;*/
+    list-style: none;
+    padding-left: 30px;
+    margin: 2px;
+    cursor: move;
+    font-size: 11px;
+    -webkit-transition: background-color 0.25s ease-in;
+    -moz-transition: background-color 0.25s ease-in;
+    transition: background-color 0.25s ease-in;
+}
+
+.ep,.ep-active,.ep-non-active{
+    float: right;
+    margin-top: 4px;
+    /*position: absolute;*/
+    bottom: 13%;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 2px black;
+    -webkit-transition: -webkit-box-shadow 0.25s ease-in;
+    -moz-transition: -moz-box-shadow 0.25s ease-in;
+    transition: box-shadow 0.25s ease-in;
+}
+.ep-non-active{
+    background-color:#667178; 
+}
+.ep:hover,.ep-active:hover,.ep-non-active:hover{
+    box-shadow: 0 0 6px black;
+}
+.edit-active{
+    cursor: pointer;
+}
+
+
+.group-container.collapsed{
+    height: 40px;
+}
+.jtk-group-collapsed .w,.jtk-group-collapsed ul,.jtk-group-collapsed .container,.jtk-group-collapsed .name{
+    display: none;
+}
+.jtk-overlay{
+    padding: 6px;
+    font-size: 12px;
+    font-family: "黑体";
+}
+.aLabel{
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #9E9E9E;
+}
+.changeLabel{
+    position: fixed;
+    width: 700px;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -350px;
+    top: 25%;
+    background: #FFF
+}
+.changeLabel h4{
+    background: #4b8df8;
+    color: #FFF;
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+}
+.changeLabel .btn-form input {
+    width: 120px;
+    float: none;
+    margin: 0 20px;
+    padding: 10px 0;
+    border: none;
+    background: #4b8df8;
+    color: #FFF;
+}
+.changeLabel h4 img {
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.changeLabel form {
+    margin: 30px 0;
+}
+
+/*添加和移除样式*/
+.active_status{
+    cursor: pointer;
+    color: #0d638f;
+}
+.non_active_status{
+    color: #ccc;
+}
+.non_active_status:hover{
+    color: #ccc;
+    text-decoration: none;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background: #555!important;
+}
+.mCSB_container_wrapper>.mCSB_container{
+    padding-right: 0;
+}
+.mCustomScrollBox.mCSB_vertical_horizontal.mCSB_inside>.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden{
+    margin-right: 0;
+}
+.mCSB_container_wrapper.mCS_no_scrollbar_x.mCS_x_hidden+.mCSB_scrollTools.mCSB_scrollTools_vertical{
+    width: 5px;
+}

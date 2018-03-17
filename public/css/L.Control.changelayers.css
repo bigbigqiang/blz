@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+/* layers control */
+.leaflet-control-layers .leaflet-control-layers-list {
+	display: block;
+	position: relative;
+}
+.leaflet-control-layers-scrollbar {
+	overflow-y: scroll;
+	padding-right: 5px;
+}
+.leaflet-control-layers-selector {
+	position: absolute;
+	display: none;
+	width: 66px;
+	height: 44px;
+	margin: 0;
+	padding: 0;
+}
+.leaflet-control-layers label {
+	display: block;
+}
+.leaflet-control-layers-separator {
+	height: 0;
+	border-top: 1px solid #ddd;
+	margin: 5px -10px 5px -6px;
+}
+/*-------------------------*/
+.leaflet-control-layers-base {
+	overflow: hidden;
+	background: #383c3e;
+	border-bottom: 1px solid #666666;
+}
+.leaflet-control-layers-base label {
+	float: left;
+	border: 3px solid #383c3e;
+	border-right: 1px solid #666666;
+	display: none;
+	width: 69px;
+}
+.leaflet-control-layers-base label>div {
+	width: 64px;
+	overflow: hidden;
+	position: relative;
+	margin-right: 2px;
+}
+.leaflet-control-layers-base label p {
+	margin: 0;
+	padding-top:30px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+}
+.leaflet-control-layers-base label div div {
+	width: 66px;
+	height: 44px;
+	position: absolute;
+	top: 0;
+	right: 1px;
+	background: url(../image/control-changelayers.png) no-repeat;
+}
+.leaflet-control-layers-overlays {
+	overflow: hidden;
+	width: 63px;
+}
+.leaflet-control-layers-overlays label>div {
+	background: #fff;
+	overflow: hidden;
+	padding: 5px 0;
+}
+.leaflet-control-layers-overlays input {
+	float: left;
+	margin-left: 8px;
+}
+.leaflet-control-layers-overlays p {
+	float: left;
+	margin: 0 5px;
+}
+.leaflet-control-layers {
+	box-shadow: none;
+}
+.leaflet-right .leaflet-control {
+	margin-right: 0;
+}
+.leaflet-top .leaflet-control {
+	margin-top: 0;
+}

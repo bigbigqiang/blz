@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.leaflet-control-measure {
+    position: relative;
+    background: #383c3d;
+}
+
+.leaflet-control-measure .leaflet-control-measure-img {
+    float: right;
+    padding: 17px 19px;
+    border-bottom: 1px solid #666;
+    cursor: pointer;
+}
+
+.leaflet-control-measure .leaflet-control-measure-img .leaflet-control-measure-i {
+    display: block;
+    width: 31px;
+    height: 15px;
+    background: url("../image/ruler.png") no-repeat;
+}
+.leaflet-control-measure .leaflet-control-measure-img .enable_measure{
+    background: url("../image/ruler2.png") no-repeat;
+}
+.leaflet-control-measure .measure-latlng {
+    display: none;
+    float: right;
+}
+
+.leaflet-control-measure .measure-latlng a {
+    display: block;
+    width: 54px;
+    height: 49px;
+    border-right: 1px solid #666;
+    border-left: 1px solid #666;
+    background: #383c3d url("../image/measure_latlng.png") no-repeat center;
+}
+
+.leaflet-control-measure .measure-latlng .enable_measure {
+    background: #383c3d url("../image/measure_latlng2.png") no-repeat center;
+}
+
+.leaflet-control-measure .measure-distance {
+    display: none;
+    float: right;
+}
+
+.leaflet-control-measure .measure-distance a {
+    display: block;
+    width: 54px;
+    height: 49px;
+    background: #383c3d url("../image/measure_ruler.png") no-repeat center;
+}
+
+.leaflet-control-measure .measure-distance .enable_measure {
+    background: #383c3d url("../image/measure_ruler2.png") no-repeat center;
+}
+
+.leaflet-control-measure .measure-word {
+    position: absolute;
+    top: 0;
+    right: 69px;
+    z-index: -1;
+    display: none;
+    width: 90px;
+    height: 48px;
+}
+
+.leaflet-control-measure .measure-word p {
+    display: block;
+    padding: 15px 25px;
+    font-size: 14px;
+    color: #fff;
+    background: #6595fb url("../image/slide-word-arrow.png") no-repeat right center;
+}
+
+.leaflet-control-measure:hover .measure-word {
+    display: block;
+}
+
+.divTip span, .endTip span {
+    display: block;
+    text-align: center;
+    color: #7a7a7a;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0 1px;
+    border: 1px solid #7a7a7a;
+    background: white;
+}
+
+.endTip span {
+    color: #ff6319;
+    border: 1px solid red;
+}
+
+.deleteBtn {
+    cursor: pointer;
+}
+.dynamicTip{
+    padding: 5px;
+    background: white;
+    border:1px solid red;
+}
+

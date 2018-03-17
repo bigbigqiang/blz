@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+.leaflet-left .leaflet-control {margin-left: 0;}
+.leaflet-control-distribution{ background:#383c3d;position:relative;}
+
+.leaflet-control-distribution-slide{ float:right;color:#fff; width:160px; background:#383c3d; position:absolute; right:69px;top:0; /*display:none;*/border-right:#666666 solid 1px;border-bottom:#666666 solid 1px;}
+
+.leaflet-control-distribution-imgs{float:right;padding:15px 25px 15px 24px;  height:20px; width:20px;border-bottom:#666666 solid 1px;}
+
+.leaflet-control-distribution-word{  display:none;
+    position: absolute;
+    top: 0;
+    right: 69px;
+    z-index: -1;
+    width: 106px;
+}
+.leaflet-control-distribution-word p{ float:left;padding:15px 25px;margin:0;background:#6595fb url(../image/slide-word-arrow.png) no-repeat right center; color:#FFF;font-size:14px !important;}
+.leaflet-control-distribution-word img{ float:left; padding-top:17px;}
+
+.leaflet-control-distribution:hover .leaflet-control-distribution-word{display:block;}
+/*----------------------------------------------------------*/
+.leaflet-control-distribution-slide{ padding:10px 0; display:none;}
+.distributionChoose{ overflow:hidden;}
+.distributionChoose>div{ float:left; width:7px; height:7px; margin:8px; padding:3px; background:#fff;}
+.distributionChecked{ float:left; width:7px; height:7px;background:#e19496; display:none;}
+.distributionname{ margin:6px 0; color:#b2b2b2;}
+
+.distributionOpacity>div{ width:120px; margin:8px 13px 0 28px;border-radius:20px; background:#fff; height:0.5em;}
+.distributionOpacity div div{border-radius:20px; background:#e19496; width:40%;}
+.distributionOpacity div span{ width:15px !important; height:15px !important;background: url("../image/slidercircle.png") !important;}
+.distributionEmpty{ padding:6px 10px;}
+
+.distributionShow{ display:block;}

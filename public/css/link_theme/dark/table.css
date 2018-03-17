@@ -1,0 +1,719 @@
+.serviceType thead tr th[cond="delete_all"] ,.databaseInfo thead tr th[cond="delete_all"],.view_manager thead tr th[cond="delete_all"]
+,.dataclean_manager thead tr th[cond="delete_all"],.perspective_manager thead tr th[cond="delete_all"],.migrate_assignments thead tr th[cond="delete_all"]
+{
+    width: 10px;
+
+}
+
+.serviceType thead tr th[cond="status"],.databaseInfo thead tr th[cond="status"]{
+    width: 48px;
+
+}
+.view_manager thead tr th[cond="status"],.perspective_manager thead tr th[cond="status"],.migrate_assignments thead tr th[cond="status"]{
+    width: 48px;
+}
+/*添加按钮的样式*/
+.add-btn{
+    width: 50px;
+    background: #0e131a;
+    color: #FFFFFF;
+    border-radius: 3px !important;
+}
+.add-btn:hover{
+    background: #7b6b3d !important;
+    color: #FFFFFF;
+}
+/*筛选*/
+.selectBox{
+
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    line-height: 18px;
+    color: #FFFFFF;
+    width: 200px;
+    height: 30px;
+    outline: none;
+    background: url("/iconfont/images/downbtn.png") no-repeat right;
+    background-position:top right;
+}
+.selectBox option{
+    background: #0e131a;
+    color: #fff;
+}
+#icon-down{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /*background: #fff;*/
+    position: absolute;
+    left: 460px;
+    top: 116px;
+}
+.add-btn:hover a{
+    color: #FFFFFF;
+
+}
+.add-btn:focus{
+    color: #efb52a;
+    border: 1px solid #efb52a;
+}
+
+.page-content {
+    background-color: #0e131a;
+}
+#nav-right{
+    background-color: #0e131a;
+}
+/*select {*/
+/*width: 220px;*/
+/*background-color: #0e131a;*/
+/*border: 1px solid #ccc;*/
+/*color: #9a9a9f;*/
+/*}*/
+.btn-group{
+    background: transparent;
+
+
+}
+.btn-group select{
+    background: #0e131a;
+    color: #9a9a9f;
+}
+.page-content {
+    /* position: relative; */
+}
+.page-title {
+
+    color: #9a9a9f;
+
+}
+.page-title span{
+    color: #2196f3;
+}
+.totalNum{
+    float: left;
+    margin-left: 15px;
+    border:1px solid #3e425e;
+    padding: 2px 10px;
+    font-size: 13px;
+}
+
+.statistics {
+    color: #aeaeb3;
+    border: 1px solid #3e425e;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+a {
+    text-shadow: none !important;
+    /* color: #0d638f; */
+    color:#fff ;
+
+}
+a:hover{
+    text-decoration: none;
+
+}
+.portlet.box.blue .portlet-title {
+    background-color: #0e131a;
+}
+.portlet.box.blue {
+    border: none;
+    border-top: 0;
+}
+.portlet.box .portlet-body {
+    background-color: #0e131a;
+    padding: 10px 10px;
+}
+.portlet.box .portlet-title {
+    padding: 8px 10px 2px 10px;
+    border-bottom:none;
+    color: #fff !important;
+}
+.table-bordered {
+    border: none;
+}
+.table-bordered input[type="checkbox"]{
+    /*display: none;*/
+}
+.table-hover tbody tr:hover>td, .table-hover tbody tr:hover>th {
+    background-color: #30353d;
+}
+.modal-body .table-hover tbody tr:hover>td, .modal-body .table-hover tbody tr:hover>th {
+    background-color: #ddd;
+}
+.layui-layer .table-hover tbody tr:hover>td, .table-hover tbody tr:hover>th {
+    background-color: #fff;
+}
+.table-striped tbody>tr:nth-child(odd)>td, .table-striped tbody>tr:nth-child(odd)>th {
+    background: none;
+}
+.table-bordered th ,.table-bordered td {
+    border: 1px solid #30353d !important;
+
+}
+
+.detailTable {
+    border:1px solid #ddd;
+}
+.table td {
+
+    border-bottom: 1px solid #30353d;
+    border-top: 1px solid #30353d;
+}
+.layui-layer table td{
+    border: 1px solid #ddd;
+    color: #000;
+}
+.view_manager .table td{
+    /*border-top: 1px solid #222830;*/
+}
+tbody{
+    /*background: #191f28;*/
+    color: #fff;
+}
+.modal-body .table tbody{
+    color: #000 !important;
+}
+#createPerspective tbody{
+    /*background: #191f28;*/
+    color: #dbdcde;
+}
+thead th{
+    color: #dbdcde;
+}
+.layui-layer thead th{
+    color: #000;
+}
+input[type="checkbox"]:before{
+    border: 1px solid #2196f3;
+}
+.btn.green {
+    border: 1px solid #fff;
+    color: white;
+    text-shadow: none;
+    background-color: #0e131a;
+}
+.btn.save:hover{
+    background-color: #0e131a !important;
+    border: 1px solid #fff !important;
+}
+#add-select{
+    position: relative;
+    float: left;
+
+    margin-top: 16px !important;
+}
+.dbMbox{
+    margin: -14px auto;
+}
+#viewAdd{
+    margin-top: -30px !important;
+}
+#indexAdd{
+    margin-top: 2px !important;
+}
+
+#index-icon{
+    position: relative;
+}
+#index-down{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /*background: #fff;*/
+    position: absolute;
+    left:320px;
+    top:5px;
+}
+#batch_del {
+    width: 85px;
+    border-radius: 3px !important;
+    font-weight: 400;
+    font-family: "微软雅黑";
+    color: white;
+    background: #2196f3;
+
+}
+#batch_del:hover{
+    background: #1b81b2 !important;
+    border-radius: 3px !important;
+}
+#batch_del:focus{
+    background: #0e7ed6  !important;
+    border: none !important;
+}
+.clickDel{
+    background: #D60E8E  !important;
+}
+/*页码样式*/
+.M-box .active, .M-box1 .active, .M-box2 .active, .M-box3 .active {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height:38px;
+    line-height: 38px;
+    background: #3498db;
+    color: #fff;
+    font-size: 14px;
+    /*border: 3px solid #3498db;*/
+}
+.M-box a:hover, .M-box1 a:hover, .M-box2 a:hover, .M-box3 a:hover {
+    color: #fff;
+    background: #3498db;
+}
+.M-box a, .M-box1 a, .M-box2 a, .M-box3 a {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #4c4e54;
+    border: none;
+    font-size: 14px;
+}
+.M-box .active{
+    border: none;
+}
+.M-box a, .M-box1 a, .M-box2 a, .M-box3 a {
+
+}
+/*发布服务*/
+.saveViewForm select{
+    border: 1px solid #2196f3;
+    background: #0e131a;
+    color: #fff;
+    position: relative;
+}
+.saveViewForm input{
+    border: 1px solid #2196f3;
+    background: #0e131a;
+    color: #fff;
+}
+
+
+
+.saveViewForm label{
+    color: #FFFFFF !important;
+}
+
+.saveViewForm select,.saveViewForm input{
+    background: #0e131a;
+    color: #FFFFFF;
+
+}
+#viewStepTwo{
+    background: #0e131a;
+
+}
+#viewStepTwo>.row-fluid {
+    background: #0e131a;
+    color: #FFFFFF;
+}
+.test-result {
+
+    background: #0e131a;
+    color: #FFFFFF;
+
+
+}
+.btn-prev{
+    color: #FFFFFF;
+}
+.detailReq thead tr {
+    /*border: 1px solid #ddd;*/
+}
+.detailReq thead th{
+    /*border: 1px solid #ddd;*/
+    color: #000000;
+}
+/*#service-params-req  thead th{*/
+/*color: #dbdcde;*/
+
+/*}*/
+#viewStepThree {
+    color: #FFFFFF;
+    background: #0e131a;
+}
+.saveViewForm select{
+    border: 1px solid #2196f3;
+    background: #0e131a;
+    color: #fff;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("/iconfont/images/downbtn.png") no-repeat scroll center transparent;
+    background-position: top right;
+    line-height: 18px;
+}
+.saveViewForm .rightBox select{
+    border: 1px solid #2196f3;
+    background: #0e131a;
+    color: #fff;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  
+    background-position: top right;
+    line-height: 18px;
+}
+#dbSource select{
+    border: 1px solid #2196f3;
+    background: #0e131a;
+    color: #fff;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("/iconfont/images/downbtn.png") no-repeat scroll center transparent;
+    background-position: top right;
+    line-height: 18px;
+    /* width: 266px; */
+}
+#viewStepOne select option{
+    background: #0e131a;
+    color: #fff;
+}
+#selectData select {
+    border: 1px solid #2196f3;
+    background: #0e131a;
+    color: #fff;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("/iconfont/images/downbtn.png") no-repeat scroll center transparent;
+    background-position: top right;
+    line-height: 18px;
+    /* width: 266px; */
+}
+#service-params-info .service-head .pull-left {
+    float: left;
+    margin-left: 10px;
+    font-size: 19px;
+}
+#service-params-info .service-content .table thead tr th{
+    color: #000000;
+
+}
+/*新建透视表*/
+#dataTitle{
+    margin:  0 60px;
+}
+#data-icon{
+    position: relative;
+}
+.con{
+    position: relative;
+}
+#icon-select{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /*background: #fff;*/
+    position: absolute;
+    right: 10%;
+    top: 1px;
+}
+.processStep .activeStep.span4 span {
+    /* background: #35aa47 url("/image/step1.png") no-repeat right; */
+    background: #1c6db0;
+    color: white;
+}
+.processStep span {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 30px;
+    background: #143c5e;
+    color: #999999;
+}
+#selectData {
+    color: #fff;
+
+    margin-left: 5%;
+}
+#selectData input{
+    border: 1px solid #2196f3;
+    background: #0e131a;
+    color: #fff;
+
+}
+#selectData select{
+    border: 1px solid #2196f3;
+    background: #0e131a;
+    color: #fff;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("/iconfont/images/downbtn.png") no-repeat scroll center transparent;
+    background-position:top right;
+    line-height: 18px;
+    /*width: 266px;*/
+}
+#selectData select option{
+    background: #0e131a;
+    color: #fff;
+}
+#clean select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("/iconfont/images/downbtn.png") no-repeat scroll center transparent;
+    background-position:top right;
+    line-height: 18px;
+}
+#createPerspective h3 {
+    background: #2c2f43;
+    color: #fff;
+
+
+}
+.createTable{
+    float: left;
+    width: 65%;
+}
+.createBaoBiao{
+    margin-top: -60px;
+}
+#createPerspective .createTable{
+    margin-top: 20px;
+}
+
+.btn-prev {
+    border: 1px solid #fff;
+    background: #0e131a;
+}
+
+.stepBtn .btn{
+    background: #0e131a;
+}
+.stepBtn .btn-save{
+    border:  1px  solid #efb52a !important;
+    color:#efb52a;
+}
+/*.stepBtn .btn-save:hover{*/
+/*background: #0e131a !important*/
+/**/
+/*}*/
+.stepBtn .btn-prev:hover{
+    border: none;
+    background:#1b81b2 !important;
+    color: #FFFFFF;
+}
+.stepBtn .btn-next:hover{
+    background: #0e131a !important;
+    color: #FFFFFF;
+}
+
+/*.btn-reset,.btn-update,.btn-next {*/
+/*background: #0e131a;*/
+/*border: 1px solid #fff;*/
+/*}*/
+.stepBtn .btn{
+    color: #FFFFFF;
+    background: #0e131a;
+    border: 1px solid #fff;
+    border-radius: 3px !important;
+}
+.btn-update:hover{
+    background: #0e131a !important;
+    color: #FFFFFF;
+}
+.btn-update:focus{
+    border: 1px solid #efb52a !important;
+    color: #efb52a;
+}
+.btn-save:hover{
+    background: #0e131a !important;
+    color: #efb52a;
+}
+/*#tableColumn {*/
+/*color: #000;*/
+/*}*/
+/*弹出框样式*/
+.add-new,.change-message{
+    background: #fff;
+    color: #000;
+}
+.add-new h4,.change-message h4 {
+    background: #2196f3;
+
+}
+.add-new select,.change-message select{
+    /*border:1px solid #575b66;*/
+    /*background: #07121d;*/
+
+    /*color: #a8b2bb;*/
+}
+.input-text input {
+    /*background: #07121d;*/
+    /*border:1px solid #575b66;*/
+    /*color: #a8b2bb;*/
+}
+.add-new select{
+    background: #fff;
+}
+/*#updatedatabaseSource{*/
+/*background: #07121d !important;*/
+/*color: #a8b2bb;*/
+/*}*/
+.add-new .btn-form .addCancel{
+    background: #FFFFFF;
+    color: #b1b8c2;
+    border: 1px solid #9ca2b2;
+}
+.add-new #save{
+    background: #2196f3;
+}
+.change-message .btn-form .cancel{
+    background: #FFFFFF;
+    color: #b1b8c2;
+    border: 1px solid #9ca2b2;
+}
+.layui-layer{
+    border: 2px solid  #2196f3;
+    background:  #FFFFFF !important;
+    color: #fff;
+}
+#layui-layer1 .layui-layer-title,#layui-layer2 .layui-layer-title,#layui-layer3 .layui-layer-title,#layui-layer4 .layui-layer-title{
+    background: #2196f3;
+    border-bottom: none;
+    color: #FFFFFF;
+}
+#layui-layer1 .layui-layer-btn .layui-layer-btn0{
+    background: #2196f3 !important;
+    /*border: 1px solid #9ca2b2;*/
+    color: #fff;
+}
+/*.layui-layer-btn a {*/
+
+/*border: 1px solid #000;*/
+/*background-color: #2196f3 !important;*/
+
+/*}*/
+.layui-layer-title {
+
+    color: #333;
+
+    background-color: #2196f3 !important;
+
+}
+.layui-layer-btn .layui-layer-btn0 {
+    /*border-color: #9ca2b2 !important;*/
+
+    color: #fff !important;
+}
+.layui-layer .layui-layer-close .layui-layer-close1,.change-message .layui-layer-btn1,.layui-layer .layui-layer-btn .layui-layer-btn1{
+    color: #9ca0a5;
+    background: #FFFFFF;
+}
+/*查看详情*/
+.detail-content{
+    border: 2px solid  #2196f3;
+    /*background:  #07121d !important;*/
+
+    color: #000;
+}
+.layui-layer-content{
+    color: #000;
+    padding: 0 0px;
+}
+/*清洗*/
+#dataClean>div>h3 {
+    color: #FFFFFF;
+    background: #2c2f43;
+    margin-top: 20px;
+
+
+}
+#dataClean .span4 h3 {
+    color: #FFFFFF;
+    background: #2c2f43;
+}
+#tableColumn span {
+    color: #FFFFFF !important;
+}
+.innerBox label{
+    color: #FFFFFF;
+}
+#dataClean select{
+    /*background: #0e131a;*/
+    color: #FFFFFF;
+
+
+}
+#dataClean select option{
+    background: #0e131a;
+    color: #fff;
+}
+#dataClean input{
+    background: #0e131a;
+    color: #FFFFFF;
+
+
+}
+#dataClean select{
+    position: relative;
+    padding-bottom:7px !important;
+}
+#dataClean .down{
+    position: absolute;
+    right: 12.5%;
+}
+.innerBox label{
+    border:none;
+}
+.m-wrap{
+    width: auto;
+}
+.submit{
+    background: #2196f3;
+    border: none;
+    height: 25px;
+    width: 25px;
+    color: #FFFFFF;
+
+}
+
+
+/*新建迁移作业*/
+#migrateBox{
+    color: #FFFFFF;
+}
+#migrateBox input,#migrateBox select{
+    border: 1px solid #2196f3;
+    background: #0e131a;
+    color: #FFFFFF;
+
+
+}
+.info-box {
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+
+}
+.layui-layer-btn .layui-layer-btn0 {
+    border-color: #2196f3;
+    background-color: #2196f3;
+    color: #fff;
+}
+#migrateBox select{
+    position: relative;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("/iconfont/images/downbtn.png") no-repeat scroll center transparent;
+    background-position:top right;
+    line-height: 18px;
+}
+#migrateBox select option{
+    background: #0e131a;
+    color: #fff;
+}
+/*视图管理弹出框*/
+#testView thead th{
+    color: #000000;
+}
+/*#testView tbody tr td:hover{*/
+/*background: none !important;*/
+/*}*/
+

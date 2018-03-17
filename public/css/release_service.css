@@ -1,0 +1,176 @@
+.processStep{
+    padding: 10px;
+    height: 30px;
+}
+.processStep li.span4{
+    float: left;
+    height: 22px;
+    margin-left: 0;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+}
+
+
+.processStep .activeStep.span4 span{
+    /*background: #35aa47 url("/image/step1.png") no-repeat right;*/
+    background: #35aa47;
+    color: white;
+}
+.processStep .activeStep.span4 i{
+    background: #35aa47 url("/image/step1.png") no-repeat;
+    background-position: 9px -30px;
+}
+.processStep i{
+    display: inline-block;
+    float: right;
+    width: 10%;
+    height: 30px;
+    background: #35aa47 url("/image/step1.png") no-repeat;
+    background-position: 9px -60px;
+}
+.processStep span{
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 30px;
+    background: #EAEAEA ;
+}
+.treeContainer{
+     margin:30px 0;
+}
+#selectSource{
+   margin-left: 37px;
+}
+#selectSource,#cfgConnect,#saveView{
+    height:689px;
+    background: #f3f3f3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.3); 
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+}
+.btnGroup{
+    margin-top: 300px;
+    text-align: center;
+}
+.btnGroup button{
+    margin-bottom: 10px;
+}
+.stepBtn .btn-abled{
+    background: #4b8df8;
+    color: white;
+}
+.stepBtn .btn-abled:hover{
+    background: #1567EC!important;
+    color: white;
+}
+.treeHead{
+    height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: bold;
+    background: #35aa47;
+    border:1px solid #35aa47;
+     -webkit-border-top-left-radius: 3px!important;
+    -moz-border-top-left-radius: 3px!important;
+    border-top-left-radius: 3px!important;
+    -webkit-border-top-right-radius: 3px!important;
+    -moz-border-top-right-radius: 3px!important;
+    border-top-right-radius: 3px!important;
+}
+#viewStepTwo{
+    margin-top: 30px;
+}
+.saveViewForm{
+    margin-top: 20px;
+}
+#tree1,#tree2,#tree3{
+    overflow: hidden;
+}
+.ztree li a.curSelectedNode{
+    background-color: #4b8df8!important;
+    color: white!important;
+    border: none!important;
+}
+.ztree li a.disabledSelectedNode{
+    background: #f3f3f3;
+    color: #B1A4A4;
+    cursor: default;
+}
+.ztree li a.disabledSelectedNode:hover{
+    text-decoration: none;
+    cursor: default;
+}
+#viewStepTwo>.row-fluid{
+    background: #f3f3f3;
+}
+#viewStepTwo .span12,#viewStepThree .span12{
+    padding: 0 16px;
+    border-bottom: 1px dashed #8C8585;
+}
+.service-head{
+    padding: 5px 15px;
+    border-bottom: 1px dotted #B4ABAB;
+}
+.service-head h4{
+    font-weight: bold;
+}
+.service-head .btn-primary{
+    background: #35aa47;
+    color: white;
+    margin: 10px 25px;
+}
+.service-head .btn-primary:hover,.service-head .btn-primary:focus,.service-head .btn-primary:active{
+    background-color: #06941C!important;
+    color: white;
+}
+.service-head i{
+    width: 20px;
+    height: 20px;
+    margin-top: 18px;
+}
+.service-head i:hover{
+    color:#1FC61A;
+}
+.service-content{
+    padding: 0 20px;
+}
+.service-content .span11{
+    margin-top: 10px;
+}
+.service-content table.table{
+    margin-bottom: 20px!important;
+}
+.stepBtn{
+    margin-top: 15px;
+}
+table.table th,table.table td{
+    text-align: center;
+}
+.layui-layer-btn{
+    text-align: center!important;
+}
+.test-result{
+    min-height:120px;
+    padding: 0 15px;
+    background: #E4E4E4;
+    border-radius: 8px!important;
+    overflow: scroll;
+}
+
+#viewStepThree {
+    margin-top: 20px;
+    background: #eee;
+}
+#service-params-info{
+    border: 1px solid #dcc;
+}
+#service-base-info .span4:nth-child(4){
+    margin-left: 0;
+}

@@ -1,0 +1,30 @@
+
+/*S leaflet-control-scale*/
+.leaflet-bottom .aero-control-scale {
+    position: absolute;
+	left:50px; bottom:-7px;
+}
+.aero-control-scale-line {
+    border: 3px solid #000000;
+    border-top: none;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    color: black;
+    line-height: 1.1;
+    padding: 2px 5px 1px;
+    font-size: 11px;
+    white-space: nowrap;
+    height: 2px;
+    position: relative;
+    overflow: visible;
+    background: none;
+}
+
+.aero-control-scale-line span {
+    position: absolute;
+    top: -8px;
+    left: 5px;
+    display: block;
+    line-height: 1.2;
+}
+/*E leaflet-control-scale*/

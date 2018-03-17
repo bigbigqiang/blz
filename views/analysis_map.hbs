@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多源异构数据整合统计分析平台-iwherelink-多元异构数据整合平台系统-北京旋极信息技术股份有限公司</title>
+    <link rel="stylesheet" href="/bootstrap-3.3.6-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/bootstrap-datetimepicker.min.css"/>
+    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="/css/analysis_map.css"/>
+    <!--[if lt IE 8]><!-->
+    <link rel="stylesheet" href="/ie7/ie7.css">
+    <!--<![endif]-->
+    <link rel="shortcut icon" href="/image/favicon.ico" />
+</head>
+<body>
+<div class="container-fluid bgcolor3 header">
+    <div class="navbar">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand">
+                <span>多源数据网格整合中间件</span>
+            </a>
+        </div>
+        <ul class="nav navbar-nav pull-right user-info">
+            <li>{{roleName}}</li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    {{userName}}
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/loginOut">退出</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container-fluid noPadding full-height">
+    <!--侧边栏 begin-->
+    <div class="affix select-cond full-height panel bgcolor1 no-border-radius side-search">
+        <form class='bgcolor-hd '>
+            <div class="form-group border-bottom analysis-condition">
+                <label for="data-type">业务场景</label>
+                <select class="form-control" id="data-type">
+                    <option value="0">请选择业务场景</option>
+                    {{#each sourceType}}
+                        <option value={{id }}>{{sourceType}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="form-group border-bottom analysis-condition">
+                <label for="dic-type">字典聚类</label>
+                <select class="form-control" id="dic-type">
+                    <option value="0">请选择字典聚类</option>
+                </select>
+            </div>
+            <div class="form-group border-bottom analysis-condition">
+                <label for="chart-type">图表类型</label>
+                <select class="form-control" id="chart-type">
+                    <option value="0">请选择图表类型</option>
+                    <option value="1">折线图</option>
+                    <option value="2">柱状图</option>
+                    <option value="3">散点图</option>
+                    <option value="4">饼形图</option>
+                </select>
+            </div>
+            <div class="form-group select-data border-bottom analysis-condition">
+                <label class='padding-right'>按时间筛选数据</label>
+                <div class="radio-inline">
+                    <input type="radio" name="sel-data" value="1"/>是
+                </div>
+                <div class="radio-inline">
+                    <input type="radio" name="sel-data" value="0"/>否
+                </div>
+            </div>
+            <div class="form-group x-axis border-bottom analysis-condition">
+                <label for="x-condi">X轴/类别名(X,Y轴其中之一需为数字)</label>
+                <select class="form-control" id="x-condi">
+                    <option value="0">请选择X轴/类别名</option>
+                </select>
+            </div>
+            <div class="form-group y-axis border-bottom analysis-condition">
+                <label for="y-condi">Y轴值/类别值(X,Y轴其中之一需为数字)</label>
+                <select class="form-control" id="y-condi">
+                    <option value="0">请选择Y轴值/类别值</option>
+                </select>
+            </div>
+            <div class="form-group z-axis border-bottom analysis-condition">
+                <label for="z-condi">Z轴值/类别值</label>
+                <select class="form-control" id="z-condi">
+                    <option value="0">请选择Z轴值/类别值</option>
+                </select>
+            </div>
+            <div class="form-group border-bottom analysis-condition">
+                <label for="chart-hd">图表标题</label>
+                <input type="text" class="fcs" id="chart-hd">
+            </div>
+            <div class="form-group select-stime border-bottom analysis-condition">
+                <label for="startTime">起始时间</label>
+                <div class="input-group calender date-input"  id="datetimepicker1">
+                    <input type="text" class="form-control" id="startTime" name="startTime"/>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                </div>
+            </div>
+            <div class="form-group select-etime border-bottom analysis-condition">
+                <label for="endTime">终止时间</label>
+                <div class="input-group calender date-input" id="datetimepicker2">
+                    <input type="text" class="form-control" id="endTime" name="startTime"/>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                </div>
+            </div>
+            <div class="form-group select-stander border-bottom analysis-condition">
+                <label for="stander">统计类型</label>
+                <select class="form-control" id="stander">
+                    <option value="0">请选择统计类型</option>
+                    <option value="YEAR">按年</option>
+                    <option value="MONTH">按月</option>
+                    <option value="DAY">按日</option>
+                </select>
+            </div>
+            <div class="search-btn">
+                <button class="btn btn-danger" type="button" id="makeChart">生成图表</button>
+            </div>
+            <div style = 'height:200px'></div>
+        </form>
+    </div>
+    <!--统计图-->
+    <div class="affix full-height chart-container"></div>
+</div>
+<script src="/js/jquery-1.11.0.min.js"></script>
+<script src="/js/echarts.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/moment.min.js"></script>
+<script src="/js/zh-cn.js"></script>
+<script src="/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/js/jquery.mousewheel.min.js"></script>
+<script src="/js/jquery.mCustomScrollbar.min.js"></script>
+<script src="/js/analysis_map.js"></script>
+</body>
+</html>

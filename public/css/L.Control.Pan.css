@@ -1,0 +1,116 @@
+/* Make the default zoom control align with the pan control.
+   
+   This is ugly. 
+   The parent box (class="leaflet-top leaflet-left") 
+   should make all the child boxes be center-aligned instead. 
+   Not sure if that is possible though.
+*/
+
+.leaflet-top .leaflet-control-pan {
+	width: 58px;
+	height: 58px;
+	margin-left:10px;
+	margin-top:10px;
+	background:url("/image/arrow.png");
+	background-position:-125px 0;
+}
+.leaflet-control-pan > div {
+	padding: 2px;
+	overflow: hidden;
+}
+.leaflet-control-pan a {
+	display: block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.leaflet-control-pan-up-wrap {
+	position: absolute;
+	left: 18px;
+}
+.leaflet-control-pan-left-wrap {
+	position: absolute;
+	top: 18px;
+}
+.leaflet-control-pan-right-wrap {
+	position: absolute;
+	left: 37px;
+	top: 18px;
+}
+.leaflet-control-pan-down-wrap {
+	position: absolute;
+	left: 18px;
+	top: 37px;
+}
+.leaflet-control-pan-center-wrap {
+	position: absolute;
+	left: 18px;
+	top: 18px; width:20px; height:20px;
+}
+.leaflet-control-pan-up-img {
+	position: absolute;
+	left: -21px;
+	top: -2px;
+}
+.leaflet-control-pan-left-img {
+	position: absolute;
+	top: -20px;
+	left: -3px;
+}
+.leaflet-control-pan-right-img {
+	position: absolute;
+	left: -40px;
+	top: -20px;
+}
+.leaflet-control-pan-down-img {
+	position: absolute;
+	left: -21px;
+	top: -39px;
+}
+.leaflet-control-pan-center-img {
+	position: absolute;
+	left:-143px;
+	top: -18px;
+	 /*transition:1s;*/
+}
+.leaflet-control-pan-up-wrap:hover .leaflet-control-pan-up-img {
+	position: absolute;
+	left: -82px;
+	top: 0px;
+	left: -84px\0;
+	top: -2px\0;
+}
+.leaflet-control-pan-left-wrap:hover .leaflet-control-pan-left-img {
+	position: absolute;
+	top: -18px;
+	left: -64px;
+	top: -20px\0;
+	left: -66px\0;
+}
+.leaflet-control-pan-right-wrap:hover .leaflet-control-pan-right-img {
+	position: absolute;
+	left: -101px;
+	top: -18px;
+	left: -103px\0;
+	top: -20px\0;
+}
+.leaflet-control-pan-down-wrap:hover .leaflet-control-pan-down-img {
+	position: absolute;
+	left: -82px;
+	top: -37px;
+	left: -84px\0;
+	top: -39px\0;
+}
+.leaflet-control-pan-center-wrap:hover .leaflet-control-pan-center-img {
+	position: absolute;
+	left: -208px;
+	top: -19px;
+	left: -210px\0;
+	top: -21px\0;
+}
+.leaflet-left .leaflet-control-pan{
+	margin-top:10px !important;
+	position: absolute;
+	left: 275px;
+	top: 52px;
+}

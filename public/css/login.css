@@ -1,0 +1,144 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+body {
+  position: absolute;
+  top: 0;
+  /*min-height: 768px;*/
+  width: 100%;
+  background: url("../image/loginBack.jpg") no-repeat 100% 100%;
+  color: #fff;
+  font-family: "Microsoft YaHei", "微软雅黑", "sans-serif";
+  margin: 0;
+  padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+/*logo*/
+img.logo {
+  display: block;
+  margin: 8% auto 1%;
+}
+/*header*/
+h1 {
+  font-size: 42px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: normal;
+}
+/*输入框*/
+.login-content{
+  background: rgba(255,255,255,.3);
+  text-align: center;
+  width: 630px;
+  height: 50%;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 20;
+}
+.login {
+  background: #ffffff;
+  text-align: center;
+  height: 100%;
+  padding: 16%;
+  font-family: "Microsoft YaHei", "微软雅黑", "sans-serif";
+  border: 1px solid #006bd6;
+  width: 590px;
+  margin: 0 auto;
+}
+.login div.user,.login div.pwd {
+  width: 310px;
+  height: 48px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+.login b {
+  position: absolute;
+  width: 25px;
+  height: 48px;
+  top: 0;
+  right: 0;
+  background: url("../image/clear.png") no-repeat left center;
+  cursor: pointer;
+  display: none;
+}
+.login span {
+  font-size: 12px;
+  color: #ff6666;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 320px;
+  line-height: 48px;
+  text-align: left;
+  display: none;
+}
+input {
+  width: 310px;
+  height: 48px;
+  font-size: 14px;
+  color: #000;
+  outline: 0;
+  background: #0d1430;
+  border: 1px solid #293f69;
+  padding-left: 45px;
+}
+input::-webkit-input-placeholder {
+  font-family: "Microsoft YaHei", "微软雅黑", "sans-serif";
+  color: #262b2e;
+  font-size: 14px;
+}
+input::-moz-placeholder {
+  font-family: "Microsoft YaHei", "微软雅黑", "sans-serif";
+  color: #262b2e;
+  font-size: 14px;
+}
+input.active::-webkit-input-placeholder {
+  color: #aaa;
+}
+input.active::-moz-placeholder {
+  color: #aaa;
+}
+input:focus {
+  border-color: #4879df;
+}
+input[name="username"] {
+  background: url("../image/userIcon.png") no-repeat 10px center;
+}
+input[name="password"] {
+  background: url("../image/psdIcon.png") no-repeat 10px center;
+}
+button {
+  margin-top: 15%;
+  width: 310px;
+  height: 48px;
+  background: #2453b3;
+  font-family: "Microsoft YaHei", "微软雅黑", "sans-serif";
+  border: 0;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+/*版权信息*/
+.footer {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  position: fixed;
+  bottom: 32px;
+  left: 0;
+  z-index: 10;
+}
+
+@media (max-height: 800px) {
+  button {
+    margin-top: 10%;
+  }
+  .login {
+    padding: 10%;
+  }
+}

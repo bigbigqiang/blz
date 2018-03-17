@@ -1,0 +1,167 @@
+{
+  "data": [
+    {
+      "databaseType": "mysql",
+      "databaseURL": "jdbc:mysql://192.168.0.39:3306/",
+      "id": 1
+    },
+    {
+      "databaseType": "oracle",
+      "databaseURL": "jdbc:oracle:thin:@127.0.0.1:1521:",
+      "id": 2
+    },
+    {
+      "databaseType": "mongodb",
+      "databaseURL": "192.168.0.39:27017",
+      "id": 3
+    },
+    {
+      "databaseType": "postgresql",
+      "databaseURL": "jdbc:postgresql://192.168.0.39:5432/",
+      "id": 4
+    },
+    {
+      "databaseType": "A",
+      "databaseURL": "A:A/A",
+      "id": 5
+    },
+    {
+      "databaseType": "DM",
+      "databaseURL": "jdbc:dm://localhost:5236/",
+      "id": 7
+    },
+    {
+      "databaseType": "KINGDB",
+      "databaseURL": "jdbc:kingbase://192.168.0.39:54321/",
+      "id": 8
+    },
+    {
+      "databaseType": "guan",
+      "databaseURL": "192.168.0.21:3305",
+      "id": 24
+    },
+    {
+      "databaseType": "microsoftsqlserver",
+      "databaseURL": "jdbc:sqlserver://192.168.0.29:1433",
+      "id": 26
+    },
+    {
+      "databaseType": "shentong",
+      "databaseURL": "jdbc:oscar://192.168.0.29:2003/",
+      "id": 27
+    }
+  ],
+  "page": {
+    "datas": [
+      {
+        "id": 21,
+        "databaseTypeId": 1,
+        "databaseType": "mysql",
+        "databaseName": "space_data",
+        "databaseURL": "jdbc:mysql://192.168.0.39:3306/",
+        "databaseUserName": "iwherelink_1.1",
+        "databasePassword": "1234",
+        "status": 1
+      },
+      {
+        "id": 22,
+        "databaseTypeId": 4,
+        "databaseType": "postgresql",
+        "databaseName": "iwl_sourcedata",
+        "databaseURL": "jdbc:postgresql://192.168.0.39:5432/",
+        "databaseUserName": "postgres",
+        "databasePassword": "postgres",
+        "status": 1
+      },
+      {
+        "id": 24,
+        "databaseTypeId": 3,
+        "databaseType": "mongodb",
+        "databaseName": "iwherelink_1_3",
+        "databaseURL": "192.168.0.39:27017",
+        "databaseUserName": "mongo_iwherelink_1.3",
+        "databasePassword": "iwherelink123",
+        "status": 1
+      },
+      {
+        "id": 29,
+        "databaseTypeId": 1,
+        "databaseType": "mysql",
+        "databaseName": "scenedata",
+        "databaseURL": "jdbc:mysql://192.168.0.39:3306/",
+        "databaseUserName": "iwherelink_1.1",
+        "databasePassword": "1234",
+        "status": 1
+      },
+      {
+        "id": 30,
+        "databaseTypeId": 1,
+        "databaseType": "mysql",
+        "databaseName": "train",
+        "databaseURL": "jdbc:mysql://192.168.0.39:3306/",
+        "databaseUserName": "train",
+        "databasePassword": "1234",
+        "status": 1
+      },
+      {
+        "id": 31,
+        "databaseTypeId": 1,
+        "databaseType": "mysql",
+        "databaseName": "station",
+        "databaseURL": "jdbc:mysql://192.168.0.39:3306/",
+        "databaseUserName": "station",
+        "databasePassword": "1234",
+        "status": 1
+      },
+      {
+        "id": 33,
+        "databaseTypeId": 2,
+        "databaseType": "oracle",
+        "databaseName": "ZHJX",
+        "databaseURL": "jdbc:oracle:thin:@192.168.0.39:1521:",
+        "databaseUserName": "ZHJX",
+        "databasePassword": "1234",
+        "status": 1
+      },
+      {
+        "id": 35,
+        "databaseTypeId": 2,
+        "databaseType": "oracle",
+        "databaseName": "ZHJX.local",
+        "databaseURL": "jdbc:oracle:thin:@//127.0.0.1:1521/",
+        "databaseUserName": "ZHJX",
+        "databasePassword": "1234",
+        "status": 1
+      },
+      {
+        "id": 36,
+        "databaseTypeId": 7,
+        "databaseType": "DM",
+        "databaseName": "BOOKSHOP",
+        "databaseURL": "jdbc:dm://localhost:5236/",
+        "databaseUserName": "LINK0.1",
+        "databasePassword": "zhjx123456",
+        "status": 1
+      },
+      {
+        "id": 37,
+        "databaseTypeId": 7,
+        "databaseType": "DM",
+        "databaseName": "MAIN",
+        "databaseURL": "jdbc:dm://192.168.0.39:5236/",
+        "databaseUserName": "DMLINK",
+        "databasePassword": "zhjx123456",
+        "status": 1
+      }
+    ],
+    "firstResult": 0,
+    "lastResult": 10,
+    "nextPage": 2,
+    "pageNo": 1,
+    "pageSize": 10,
+    "pageUrl": "",
+    "totalCount": 17,
+    "totalPage": 2,
+    "upPage": 1
+  }
+}

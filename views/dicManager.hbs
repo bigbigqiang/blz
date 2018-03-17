@@ -1,0 +1,123 @@
+{{#section 'head'}}
+    {{!--<link rel="stylesheet" href="/css/link_theme/dark/table.css">--}}
+
+    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+
+{{/section}}
+{{#section 'pagetitle'}}
+    <div class="page-title titleList row">
+        <div class="span2 listNum"><p class="totalNum">字典数量：<span>{{totalNum}}</span></p></div>
+        <div class="span10 statusNum">
+            {{#if statistics}}
+            {{!-- {{#each statistics}} --}}
+                {{#statisticsStatus statistics arr}}{{/statisticsStatus}}
+            {{!--{{/each}}--}}
+            {{else}}
+                <p class="statistics ">暂无统计信息：<span></span></p>
+            {{/if}}
+        </div>
+    </div>
+{{/section}}
+<!--<select class="database-type selectBox" id="selectViewName">-->
+    <!--<option value="0">全部</option>-->
+    <!--{{#if dicName}}-->
+        <!--{{#each dicName}}-->
+            <!--<option value={{id}}>{{name}}</option>-->
+        <!--{{/each}}-->
+    <!--{{else}}-->
+        <!--<option>暂无数据</option>-->
+    <!--{{/if}}-->
+<!--</select>-->
+<table class="table table-striped table-hover table-bordered view_manager">
+    <thead>
+    <tr class="table-title">
+        <th class="span1" cond="delete_all"><input type="checkbox" id="select_all" /></th>
+        <th class="span1" cond="status">状态
+            <!--<span style="margin-left:10px"></span>-->
+        </th>
+        <th class="span2" cond="name">字典名称
+            <span style="margin-left:10px"><i class="icon-chevron-up"></i></span>
+        </th>
+        <th class="span3" cond="froms">数据源
+            <span style="margin-left:10px"></span>
+        </th>
+        <th class="span3" cond="lasttime">最后修改日期
+            <span style="margin-left:10px"><i class="icon-chevron-up"></i></span>
+        </th>
+        <th class="span2" cond="operate">操作
+        </th>
+        <th class="span2">查看详情</th>
+        <!--<th class="span1">编辑</th>-->
+        <th class="span1">删除</th>
+        <th class="span2">测试查询</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each dicName}}
+        <tr>
+            <td class='text-center'><input type="checkbox" value={{id}}></td>
+            <td class='text-center linkStatus'>{{#linkStatus status}}{{/linkStatus}}</td>
+            <td class='text-center' value={{id}}>{{name}}</td>
+            <td class='text-center'>{{froms}}</td>
+            <td class='text-center'>{{lasttime}}</td>
+            <td class='text-center'>
+                {{#status status}}{{/status}}
+            </td>
+            <td class='text-center'>
+                <a class='checkDetails' href='javascript:;'>查看详情</a>
+            </td>
+            <!--<td class='text-center'>-->
+                <!--<a class='edit' href='javascript:;'>编辑</a>-->
+            <!--</td>-->
+            <td class='text-center'>
+                <a class='delete' href='javascript:;'>删除</a>
+            </td>
+            <td class='text-center'>
+                <a class='connectionCheck' href='javascript:;'>测试连接</a>
+            </td>
+            <td class='text-center' style='display: none'>{{id}}</td>
+        </tr>
+    {{else}}
+        <tr>
+            <td colspan='11' class='text-center'>暂无数据</td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
+<input type="hidden" id="del" value="delView" />
+<div class="pagination pagination-mini" style="float: right; margin-right: 30px; margin-bottom: 20px;">
+    <div class="M-box" totalPage={{totalPage}} page={{page}} totalNum="{{totalNum}}"></div>
+</div>
+<!--START TABLR BACKGROUNDGREY-->
+<div class="tablebg-grey"></div>
+<!--START TABLR CHANGE-->
+<div class="clearfix">
+    <div class="btn-group" id="add-select" >
+        <div  class="btn add-btn "><a href="/definedDic.do">添加</a>
+        </div>
+        <!--<button id="sample_editable_1_new" class="btn green add_view"><a href="/definedDic.do">添加</a><i class="icon-plus"></i>-->
+        <!--</button>-->
+        <button class="btn" type="button" id="batch_del">批量删除</button>
+
+
+
+    </div>
+
+</div>
+<!--END TABLR CHANGE-->
+</div>
+</div>
+<!-- END EXAMPLE TABLE PORTLET-->
+</div>
+</div>
+<!-- END PAGE CONTENT -->
+</div>
+<!-- END PAGE CONTAINER-->
+</div>
+<!-- END PAGE -->
+{{#section 'js'}}
+    <script src="js/jquery.pagination.js"></script>
+    <script src="js/sockjs.js"></script>
+    <script src="js/dic_manager.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js">
+{{/section}}

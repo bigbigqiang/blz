@@ -1,0 +1,115 @@
+{{#section 'head'}}
+    {{!--<link rel="stylesheet" href="/css/link_theme/dark/table.css">--}}
+
+
+{{/section}}
+{{#section 'pagetitle'}}
+    <div class="page-title titleList row">
+        <div class="span6 listNum"><p class="totalNum">索引大表数据量：<span>{{totalNum}}</span></p></div>
+        <div class="span6 statusNum">
+            {{#if statistics}}
+                {{#each statistics}}
+                    <p class="statistics ">{{#isSourceType status}}{{/isSourceType}}：<span>{{count}}</span></p>
+                {{/each}}
+            {{else}}
+                <p class="statistics ">暂无统计信息：<span></span></p>
+            {{/if}}
+        </div>
+    </div>
+{{/section}}
+<!--<select class="database-type selectBox" id="selectViewName">-->
+    <!--<option value="0">全部</option>-->
+    <!--{{#if dicName}}-->
+        <!--{{#each dicName}}-->
+            <!--<option value={{id}}>{{dbType}}</option>-->
+        <!--{{/each}}-->
+    <!--{{else}}-->
+        <!--<option>暂无数据</option>-->
+    <!--{{/if}}-->
+<!--</select>-->
+<table class="table table-striped table-hover table-bordered view_manager">
+    <thead>
+    <tr class="table-title">
+        <th class="span1" cond="delete_all"><input type="checkbox" id="select_all" /></th>
+        <th class="span2" cond="sourceType">数据源类型
+            <!--<span style="margin-left:10px"><i class="icon-chevron-up"></i></span>-->
+        </th>
+        <th class="span3" cond="tableName">数据源名称
+            <!--<span style="margin-left:10px"><i class="icon-chevron-up"></i></span>-->
+        </th>
+        <th class="span3" cond="tableid">数据编号
+            <!--<span style="margin-left:10px"><i class="icon-chevron-up"></i></span>-->
+        </th>
+        <th class="span2" cond="codeType">编码类型
+            <!--<span style="margin-left:10px"><i class="icon-chevron-up"></i></span>-->
+        </th>
+        <th class="span3" cond="code">网格码
+            <span style="margin-left:10px"><i class="icon-chevron-up"></i></span>
+        </th>
+        <th class="span2" cond="layer">层级
+            <span style="margin-left:10px"><i class="icon-chevron-up"></i></span>
+        </th>
+
+
+        <th class="span2">查看详情</th>
+        <th class="span1">删除</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each dicName}}
+        <tr>
+            <td class='text-center'><input type="checkbox" value={{id}}></td>
+            <td class='text-center'>{{#isSourceType sourceType}}{{/isSourceType}}</td>
+            <td class='text-center'>{{tableName}}</td>
+            <td class='text-center'>{{tableid}}</td>
+            <td class='text-center'>{{#isCodeType codeType}}{{/isCodeType}}</td>
+            <td class='text-center'>{{code}}</td>
+            <td class='text-center'>{{layer}}</td>
+
+            <td class='text-center'>
+                <a class='checkDetails' href='javascript:;'>查看详情</a>
+            </td>
+            <td class='text-center'>
+                <a class='delete' href='javascript:;'>删除</a>
+            </td>
+            <td class='text-center' style='display: none'>{{id}}</td>
+        </tr>
+    {{else}}
+        <tr>
+            <td colspan='11' class='text-center'>暂无数据</td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
+<input type="hidden" id="del" value="delView" />
+<div class="pagination pagination-mini" style="float: right; margin-right: 30px; margin-bottom: 20px;">
+    <div class="M-box" totalPage={{totalPage}} page={{page}} totalNum="{{totalNum}}"></div>
+</div>
+<!--START TABLR BACKGROUNDGREY-->
+<div class="tablebg-grey"></div>
+<!--START TABLR CHANGE-->
+<div class="clearfix">
+    <div class="btn-group" id="index-icon" >
+        <button class="btn" type="button" id="batch_del">批量删除</button>
+
+
+
+    </div>
+
+
+</div>
+<!--END TABLR CHANGE-->
+</div>
+</div>
+<!-- END EXAMPLE TABLE PORTLET-->
+</div>
+</div>
+<!-- END PAGE CONTENT -->
+</div>
+<!-- END PAGE CONTAINER-->
+</div>
+<!-- END PAGE -->
+{{#section 'js'}}
+    <script src="js/jquery.pagination.js"></script>
+    {{!--<script src="js/sockjs.js"></script>}--}}
+    <script src="js/index_large_manager.js"></script> {{/section}}
